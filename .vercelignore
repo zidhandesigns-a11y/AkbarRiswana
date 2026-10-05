@@ -1,8 +1,0 @@
-# Ignore local server
-local-server.js
-server.js
-
-# Ignore scratch and test files
-scratch/
-reference.mp4
-node_modules/

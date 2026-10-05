@@ -1,9 +1,0 @@
-{
-  "name": "nikah-invitation",
-  "version": "1.0.0",
-  "private": true,
-  "description": "Luxurious animated Nikkah & Wedding invitation website",
-  "scripts": {
-    "start": "node local-server.js"
-  }
-}
