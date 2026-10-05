@@ -1,0 +1,8 @@
+# Ignore local server so Vercel treats this repository as a pure static site
+server.js
+
+# Ignore local scratch & test scripts
+scratch/
+
+# Ignore local reference video
+reference.mp4

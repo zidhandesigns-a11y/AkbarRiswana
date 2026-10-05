@@ -78,3 +78,5 @@ server.listen(PORT, '0.0.0.0', () => {
   console.log(`✨ Nikkah invitation website is running at: http://localhost:${PORT}`);
   console.log(`✨ Local access: http://127.0.0.1:${PORT}`);
 });
+
+module.exports = server;

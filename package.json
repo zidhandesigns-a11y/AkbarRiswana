@@ -4,9 +4,10 @@
   "private": true,
   "description": "Luxurious animated Nikkah & Wedding invitation website",
   "scripts": {
+    "build": "echo 'Static files ready'",
     "start": "node server.js"
   },
-  "dependencies": {
+  "devDependencies": {
     "@ffmpeg-installer/ffmpeg": "^1.1.0",
     "fluent-ffmpeg": "^2.1.3",
     "puppeteer-core": "^25.12.0"
