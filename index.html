@@ -572,24 +572,26 @@ html.lenis, html.lenis body { height: auto; }
    ========================================================= */
 .chrome-corner {
   position: fixed;
-  top: calc(26px + env(safe-area-inset-top)); left: 28px;
+  top: calc(24px + env(safe-area-inset-top)); left: 28px;
   z-index: 100;
+  display: inline-flex;
+  align-items: center;
   font-family: var(--serif);
   font-style: italic;
-  font-size: 14px;
-  letter-spacing: 0.08em;
+  font-size: 15px;
+  letter-spacing: 0.06em;
   color: var(--pista-deep);
   font-weight: 500;
   pointer-events: none;
 }
 .chrome-corner .dot {
   display: inline-block;
-  width: 7px; height: 7px;
-  background: var(--gold);
+  width: 6px; height: 6px;
+  background: var(--pista, #476a3b);
   border-radius: 50%;
-  margin-right: 10px;
+  margin-right: 9px;
   vertical-align: middle;
-  box-shadow: 0 0 10px var(--gold);
+  box-shadow: 0 0 8px rgba(71, 106, 59, 0.4);
   animation: breath 2.4s ease-in-out infinite;
 }
 @keyframes breath {
@@ -599,14 +601,23 @@ html.lenis, html.lenis body { height: auto; }
 
 .chrome-index {
   position: fixed;
-  top: calc(26px + env(safe-area-inset-top)); right: 28px;
+  top: calc(24px + env(safe-area-inset-top)); right: 28px;
   z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
   font-family: var(--serif);
-  font-size: 12px;
+  font-size: 10.5px;
   letter-spacing: 0.28em;
   text-transform: uppercase;
   color: var(--text-soft);
+  line-height: 1.4;
   pointer-events: none;
+  opacity: 0.85;
+}
+.chrome-index .ci-line {
+  display: block;
 }
 
 .progress-rail {
@@ -1606,7 +1617,23 @@ html.lenis, html.lenis body { height: auto; }
 }
 
 @media (max-width: 768px) {
-  .chrome-corner, .chrome-index { display: none !important; }
+  .chrome-corner {
+    top: calc(16px + env(safe-area-inset-top));
+    left: 18px;
+    font-size: 13px;
+    letter-spacing: 0.05em;
+  }
+  .chrome-corner .dot {
+    width: 5px; height: 5px;
+    margin-right: 7px;
+  }
+  .chrome-index {
+    top: calc(16px + env(safe-area-inset-top));
+    right: 18px;
+    font-size: 8.5px;
+    letter-spacing: 0.22em;
+    line-height: 1.35;
+  }
   .day-foot { flex-direction: column; align-items: flex-start; }
   .day-foot .right-col { align-items: flex-start; }
   .cd-nums { grid-template-columns: repeat(2, 1fr); gap: 10px; }
@@ -1774,7 +1801,10 @@ html.lenis, html.lenis body { height: auto; }
   <span class="dot"></span><span>Akbar &amp; Riswana</span>
 </div>
 
-<div class="chrome-index">17.10.2026 · THRISSUR</div>
+<div class="chrome-index">
+  <span class="ci-line">A LOVE LETTER</span>
+  <span class="ci-line">IN MOTION</span>
+</div>
 
 <div class="progress-rail" id="progressRail"></div>
 
