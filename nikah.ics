@@ -1,0 +1,16 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//akbarriswana//nikah//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:nikah-20261017@akbarriswana.com
+DTSTAMP:20261004T000000Z
+DTSTART:20261017T060000Z
+DTEND:20261017T093000Z
+SUMMARY:Nikah — Akbar & Riswana
+DESCRIPTION:Nikah Ceremony of Akbar & Riswana — Saturday 17 October 2026\, 11:30 AM IST.
+LOCATION:V. P. Mamu Community Hall\, Andathode\, Thrissur\, Kerala
+URL:https://maps.app.goo.gl/wbC4Cchs4wCedarr9?g_st=iw
+END:VEVENT
+END:VCALENDAR

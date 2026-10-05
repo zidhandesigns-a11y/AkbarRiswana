@@ -1,0 +1,10 @@
+# Dependencies
+node_modules/
+
+# Scratch & Temporary Testing Scripts
+scratch/
+
+# OS Metadata
+.DS_Store
+Thumbs.db
+desktop.ini

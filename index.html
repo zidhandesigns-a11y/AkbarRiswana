@@ -1,0 +1,2963 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>Akbar &amp; Riswana — Nikkah Invitation · 17 October 2026</title>
+<meta name="description" content="Join Akbar &amp; Riswana for their solemn Nikkah on Saturday 17 October 2026 at V. P. Mamu Community Hall, Andathode, Thrissur, Kerala." />
+<meta name="theme-color" content="#f8faf5" />
+<link rel="canonical" href="https://akbarriswana.com/" />
+
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Akbar &amp; Riswana" />
+<meta property="og:title" content="Akbar &amp; Riswana — Nikkah Invitation" />
+<meta property="og:description" content="Nikkah Ceremony · Saturday 17 October 2026 at V. P. Mamu Community Hall, Andathode, Thrissur, Kerala." />
+<meta property="og:image" content="og-image.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Akbar &amp; Riswana — Nikkah Invitation" />
+<meta name="twitter:description" content="Nikkah Ceremony · Saturday 17 October 2026, Thrissur, Kerala." />
+
+<link rel="icon" type="image/svg+xml"
+  href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='82'%3E✨%3C/text%3E%3C/svg%3E" />
+<link rel="manifest" href="manifest.webmanifest" />
+<meta name="apple-mobile-web-app-title" content="Akbar &amp; Riswana" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+
+<script src="vendor/gsap.min.js"></script>
+<script src="vendor/ScrollTrigger.min.js"></script>
+<script src="vendor/lenis.min.js"></script>
+
+<style>
+/* =========================================================
+   DESIGN TOKENS — PISTA GREEN, OFF-WHITE & CHAMPAGNE GOLD
+   ========================================================= */
+:root {
+  --bg: #f8faf5;             /* Off-white luxury pearl parchment */
+  --bg-alt: #f1f5ec;         /* Soft pista-tinted off-white */
+  --bg-card: rgba(255, 255, 255, 0.92);
+  
+  --pista-deep: #25401f;     /* Deep contrast emerald-pista (headings, accessible text) */
+  --pista: #476a3b;          /* Royal pista green */
+  --pista-soft: #7a9e6e;     /* Medium sage-pista */
+  --pista-light: #cde0c5;    /* Delicate pale pista */
+  --pista-tint: #edf4ea;     /* Whisper pista background tint */
+  
+  /* Harmonize aliases so all components point to the pista green palette */
+  --rose-deep: #25401f;
+  --rose: #476a3b;
+  --rose-soft: #7a9e6e;
+  --rose-light: #cde0c5;
+  --rose-tint: #edf4ea;
+  
+  --gold: #c5a059;           /* Pure champagne gold */
+  --gold-light: #f4e5b8;     /* Luminous gold highlight */
+  --gold-deep: #8f6e2b;      /* Shadowed antique gold */
+  
+  --ink: #172614;            /* Darkest rich botanical charcoal */
+  --text: #374a33;           /* Body copy */
+  --text-soft: #5e7359;      /* Subtitles & captions */
+  --line: rgba(71, 106, 59, 0.18);
+  --line-gold: rgba(197, 160, 89, 0.35);
+
+  --serif: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+  --display: 'Playfair Display', Georgia, serif;
+  --arabic: 'Amiri', 'Traditional Arabic', serif;
+  --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+* {
+  margin: 0; padding: 0; box-sizing: border-box;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-feature-settings: "lnum" 1, "pnum" 1;
+}
+
+html, body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-feature-settings: "lnum" 1, "pnum" 1;
+  overflow-x: hidden;
+}
+
+/* Explicit Baseline & Lining Fix for All Dates, Times, and Numbers */
+.hero-meta,
+.hero-meta *,
+.header-row,
+.header-row *,
+.sub-tag,
+.day-date,
+.day-date *,
+.hijri,
+.cd-card h3,
+.cd-nums,
+.cd-box,
+.odometer,
+.blessings-counter,
+.inner-meta,
+.portrait-badge,
+.portrait-badge *,
+.closing-block,
+.meta-pill,
+.time-chip,
+.venue-details,
+.chrome-index {
+  font-variant-numeric: lining-nums tabular-nums !important;
+  font-feature-settings: "lnum" 1, "tnum" 1 !important;
+  vertical-align: baseline;
+}
+
+body { line-height: 1.5; }
+
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; }
+.lenis.lenis-stopped { overflow: hidden; }
+
+/* Subtle Luxury Paper Texture Grain */
+.grain {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9000;
+  opacity: 0.04;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.35 0 0 0 0 0.20 0 0 0 0 0.25 0 0 0 0.8 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+}
+
+/* =========================================================
+   CELESTIAL STARBURST & AMBIENT NOOR CANVAS
+   ========================================================= */
+#starCanvas {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 10002;
+}
+
+.ambient-noor {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.noor-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.45;
+  pointer-events: none;
+  animation: floatNoor 18s ease-in-out infinite alternate;
+}
+.noor-orb-1 {
+  width: 500px; height: 500px;
+  top: -100px; left: -100px;
+  background: radial-gradient(circle, rgba(122, 165, 113, 0.45) 0%, rgba(122, 165, 113, 0) 70%);
+}
+.noor-orb-2 {
+  width: 600px; height: 600px;
+  bottom: 10%; right: -150px;
+  background: radial-gradient(circle, rgba(205, 224, 197, 0.5) 0%, rgba(205, 224, 197, 0) 70%);
+  animation-duration: 24s;
+  animation-delay: -6s;
+}
+@keyframes floatNoor {
+  0% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(60px, 40px) scale(1.1); }
+  100% { transform: translate(-40px, 80px) scale(0.95); }
+}
+
+/* =========================================================
+   ROYAL GATEFOLD INVITATION OPENING CEREMONY
+   (Pista Green, Soft Peach, Off-White & Golden Braided Cord)
+   ========================================================= */
+#cardOpeningIntro {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  pointer-events: auto;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+  user-select: none;
+  cursor: pointer;
+}
+#cardOpeningIntro.is-hidden { pointer-events: none; }
+
+.opening-backdrop {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 90% 80% at 50% 45%, #182815 0%, #0d170b 55%, #050a04 100%);
+  transition: opacity 0.8s var(--ease-out);
+}
+
+.opening-stage {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 16px;
+  perspective: 1600px;
+}
+
+/* 3D Gatefold Card Container */
+.gatefold-card {
+  position: relative;
+  width: clamp(290px, 38vw, 440px);
+  aspect-ratio: 1 / 1.42;
+  transform-style: preserve-3d;
+  box-shadow:
+    0 35px 80px rgba(0, 0, 0, 0.6),
+    0 10px 30px rgba(0, 0, 0, 0.45),
+    0 0 50px rgba(197, 160, 89, 0.22);
+  border-radius: 10px;
+  transition: transform 0.4s var(--ease-out), box-shadow 0.4s var(--ease-out);
+}
+.gatefold-card:hover {
+  transform: translateY(-4px) rotateX(1deg);
+  box-shadow:
+    0 45px 95px rgba(0, 0, 0, 0.65),
+    0 14px 35px rgba(0, 0, 0, 0.5),
+    0 0 65px rgba(197, 160, 89, 0.35);
+}
+
+/* Inner Revealed Off-White Card */
+.card-inner-sheet {
+  position: absolute;
+  inset: 0;
+  background: #fbfcf8;
+  border-radius: 10px;
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  border: 1px solid rgba(197, 160, 89, 0.45);
+  box-shadow: inset 0 0 45px rgba(197, 160, 89, 0.14);
+  z-index: 1;
+}
+.card-inner-sheet .inner-deckled-border {
+  position: absolute;
+  inset: 10px;
+  border: 1px dashed rgba(197, 160, 89, 0.4);
+  border-radius: 6px;
+  pointer-events: none;
+}
+.card-inner-sheet .bismillah-small {
+  font-family: var(--arabic);
+  font-size: clamp(17px, 1.9vw, 23px);
+  color: var(--pista-deep);
+  line-height: 1.6;
+}
+.card-inner-sheet .inner-title {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: clamp(10px, 1.1vw, 13px);
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+  margin-top: 6px;
+}
+.card-inner-sheet .inner-names {
+  font-family: var(--display);
+  font-size: clamp(23px, 3.1vw, 36px);
+  font-weight: 500;
+  color: var(--ink);
+  line-height: 1.15;
+  margin: 10px 0;
+}
+.card-inner-sheet .inner-ampersand {
+  font-family: var(--serif);
+  font-style: italic;
+  color: var(--gold);
+  font-size: 0.7em;
+  display: block;
+}
+.card-inner-sheet .inner-meta {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: clamp(11px, 1.2vw, 14px);
+  color: var(--text-soft);
+  letter-spacing: 0.08em;
+  line-height: 1.5;
+}
+.card-inner-sheet .inner-seal-mark {
+  width: 38px;
+  height: 38px;
+  color: var(--gold);
+  opacity: 0.85;
+}
+
+/* Left Flap: Matte Pista Green */
+.card-flap-left {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  background: linear-gradient(135deg, #44693a 0%, #35532c 100%);
+  border-radius: 10px 0 0 10px;
+  transform-origin: left center;
+  transform-style: preserve-3d;
+  z-index: 5;
+  box-shadow: 6px 0 18px rgba(0, 0, 0, 0.32);
+  overflow: hidden;
+  border-right: 1px solid rgba(197, 160, 89, 0.45);
+}
+
+/* Right Flap: Soft Warm Peach */
+.card-flap-right {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  background: linear-gradient(135deg, #f5c4a7 0%, #e6a784 100%);
+  border-radius: 0 10px 10px 0;
+  transform-origin: right center;
+  transform-style: preserve-3d;
+  z-index: 5;
+  box-shadow: -6px 0 18px rgba(0, 0, 0, 0.28);
+  overflow: hidden;
+  border-left: 1px solid rgba(197, 160, 89, 0.45);
+}
+
+.flap-foil-svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+/* Wrapped Golden Braided Thread & Medallion */
+.card-ribbon-wrap {
+  position: absolute;
+  top: 50%;
+  left: -5%;
+  right: -5%;
+  transform: translateY(-50%);
+  z-index: 10;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+/* Metallic Braided Thread Cord */
+.braided-cord {
+  position: relative;
+  width: 100%;
+  height: 16px;
+  background: repeating-linear-gradient(
+    45deg,
+    #8e6924 0px,
+    #b88a38 4px,
+    #ffd782 8px,
+    #fce7b0 10px,
+    #b88a38 14px,
+    #8e6924 16px
+  );
+  box-shadow:
+    0 8px 22px rgba(0, 0, 0, 0.48),
+    0 2px 5px rgba(0, 0, 0, 0.35),
+    inset 0 1px 2px rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Central Gold Calligraphy Medallion Seal */
+.cord-medallion {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: clamp(70px, 9vw, 86px);
+  height: clamp(70px, 9vw, 86px);
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #fff0b8 0%, #dbb258 45%, #946e22 80%, #614611 100%);
+  box-shadow:
+    0 12px 32px rgba(0, 0, 0, 0.5),
+    0 0 38px rgba(220, 180, 80, 0.65),
+    inset 0 2px 3px rgba(255, 255, 255, 0.8),
+    inset 0 -2px 3px rgba(0, 0, 0, 0.5);
+  border: 2px solid #ffeaa7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 12;
+  cursor: pointer;
+  transition: transform 0.3s var(--ease-out), box-shadow 0.3s var(--ease-out);
+}
+.cord-medallion:hover {
+  transform: translate(-50%, -50%) scale(1.08);
+  box-shadow:
+    0 16px 42px rgba(0, 0, 0, 0.6),
+    0 0 50px rgba(255, 215, 130, 0.85);
+}
+.cord-medallion svg {
+  width: 78%;
+  height: 78%;
+}
+
+/* Twin Golden Silk Tassels */
+.tassels-hang {
+  position: absolute;
+  top: 86%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 12px;
+  z-index: 11;
+  pointer-events: none;
+}
+.silk-tassel {
+  width: 15px;
+  height: clamp(60px, 8.5vw, 82px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform-origin: top center;
+  animation: tasselSway 3.2s ease-in-out infinite alternate;
+}
+.silk-tassel:nth-child(2) {
+  animation-delay: -1.6s;
+  height: clamp(66px, 9vw, 90px);
+}
+@keyframes tasselSway {
+  0% { transform: rotate(-5deg); }
+  100% { transform: rotate(5deg); }
+}
+.tassel-bead {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #fff, #e6b756, #805b18);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+}
+.tassel-string {
+  width: 1.5px;
+  height: 9px;
+  background: #c5a059;
+}
+.tassel-head {
+  width: 12px;
+  height: 11px;
+  border-radius: 6px 6px 2px 2px;
+  background: linear-gradient(180deg, #ffd782, #b88a38);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+.tassel-skirt {
+  width: 15px;
+  flex: 1;
+  background: repeating-linear-gradient(
+    90deg,
+    #a3792c 0px,
+    #ffd782 2px,
+    #d1a447 4px,
+    #8e6924 6px
+  );
+  border-radius: 0 0 2px 2px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.35);
+  clip-path: polygon(15% 0%, 85% 0%, 100% 100%, 0% 100%);
+}
+
+/* Interactive Pull Prompt Tag */
+.cord-pull-tab {
+  position: absolute;
+  right: -24px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  padding: 7px 16px 7px 12px;
+  border-radius: 20px;
+  border: 1px solid var(--line-gold);
+  box-shadow: 0 6px 22px rgba(0, 0, 0, 0.3);
+  animation: pullNudge 1.8s ease-in-out infinite alternate;
+  pointer-events: auto;
+  cursor: pointer;
+}
+@keyframes pullNudge {
+  0% { transform: translateY(-50%) translateX(0); }
+  100% { transform: translateY(-50%) translateX(8px); }
+}
+.cord-pull-tab .pull-arrow {
+  color: var(--gold-deep);
+  font-size: 14px;
+  animation: arrowGlide 1.2s ease-in-out infinite alternate;
+}
+@keyframes arrowGlide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(4px); }
+}
+.cord-pull-tab .pull-text {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  color: var(--pista-deep);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Prompt Below Card */
+.opening-instructions {
+  margin-top: 36px;
+  text-align: center;
+  pointer-events: auto;
+}
+.opening-names {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: clamp(20px, 2.5vw, 30px);
+  color: #f8faf5;
+  letter-spacing: 0.08em;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.8), 0 0 25px rgba(197, 160, 89, 0.45);
+}
+.opening-sub {
+  margin-top: 8px;
+  font-family: var(--sans);
+  font-size: 11px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: rgba(244, 226, 184, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.opening-sub .pulse-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--gold-light);
+  box-shadow: 0 0 10px var(--gold);
+  animation: pulseDot 1.4s ease-in-out infinite;
+}
+@keyframes pulseDot {
+  0%, 100% { opacity: 0.4; transform: scale(0.8); }
+  50% { opacity: 1; transform: scale(1.3); }
+}
+
+@media (max-width: 768px) {
+  .cord-pull-tab {
+    right: -10px;
+    padding: 5px 12px;
+  }
+  .cord-pull-tab .pull-text {
+    font-size: 11px;
+  }
+}
+
+/* =========================================================
+   FIXED CHROME & HUD
+   ========================================================= */
+.chrome-corner {
+  position: fixed;
+  top: calc(26px + env(safe-area-inset-top)); left: 28px;
+  z-index: 100;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 14px;
+  letter-spacing: 0.08em;
+  color: var(--pista-deep);
+  font-weight: 500;
+  pointer-events: none;
+}
+.chrome-corner .dot {
+  display: inline-block;
+  width: 7px; height: 7px;
+  background: var(--gold);
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
+  box-shadow: 0 0 10px var(--gold);
+  animation: breath 2.4s ease-in-out infinite;
+}
+@keyframes breath {
+  0%, 100% { opacity: 0.55; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.35); }
+}
+
+.chrome-index {
+  position: fixed;
+  top: calc(26px + env(safe-area-inset-top)); right: 28px;
+  z-index: 100;
+  font-family: var(--serif);
+  font-size: 12px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--text-soft);
+  pointer-events: none;
+}
+
+.progress-rail {
+  position: fixed;
+  bottom: calc(24px + env(safe-area-inset-bottom)); left: 28px; right: 28px;
+  height: 1px;
+  background: rgba(71, 106, 59, 0.14);
+  z-index: 100;
+  pointer-events: none;
+}
+.progress-rail::after {
+  content: "";
+  position: absolute;
+  top: -1px; left: 0;
+  height: 3px;
+  width: var(--p, 0%);
+  background: linear-gradient(90deg, var(--rose), var(--gold));
+  border-radius: 2px;
+  transition: width 0.1s linear;
+}
+
+/* Floating Music Control */
+#musicToggle {
+  position: fixed;
+  bottom: calc(44px + env(safe-area-inset-bottom)); right: 28px;
+  z-index: 200;
+  width: 52px; height: 52px;
+  border-radius: 50%;
+  border: 1px solid var(--line-gold);
+  background: rgba(248, 250, 245, 0.92);
+  backdrop-filter: blur(10px);
+  color: var(--pista-deep);
+  cursor: pointer;
+  display: grid; place-items: center;
+  box-shadow: 0 8px 24px rgba(37, 64, 31, 0.16);
+  transition: transform 0.3s var(--ease-out), box-shadow 0.3s var(--ease-out);
+}
+#musicToggle:hover {
+  transform: translateY(-3px) scale(1.04);
+  box-shadow: 0 12px 30px rgba(37, 64, 31, 0.24);
+}
+#musicToggle .eq {
+  display: flex; gap: 3px; align-items: flex-end;
+  height: 15px;
+}
+#musicToggle .eq span {
+  display: block;
+  width: 2px;
+  background: var(--pista-deep);
+  border-radius: 1px;
+  animation: eq 0.9s ease-in-out infinite;
+}
+#musicToggle .eq span:nth-child(1) { height: 60%; animation-delay: -0.2s; }
+#musicToggle .eq span:nth-child(2) { height: 100%; animation-delay: -0.5s; }
+#musicToggle .eq span:nth-child(3) { height: 75%; animation-delay: -0.8s; }
+#musicToggle .eq span:nth-child(4) { height: 45%; animation-delay: -0.3s; }
+#musicToggle.paused .eq span { animation-play-state: paused; height: 35%; }
+@keyframes eq {
+  0%, 100% { transform: scaleY(0.35); }
+  50% { transform: scaleY(1); }
+}
+
+/* =========================================================
+   SECTION 1 — HERO WITH ROYAL MIHRAB ARCH
+   ========================================================= */
+.hero {
+  position: relative;
+  height: 100vh;
+  min-height: 700px;
+  width: 100%;
+  overflow: hidden;
+  background:
+    radial-gradient(1100px 750px at 50% 30%, rgba(205, 224, 197, 0.35), transparent 70%),
+    radial-gradient(1000px 650px at 80% 85%, rgba(237, 244, 234, 0.45), transparent 60%),
+    linear-gradient(180deg, #f8faf5 0%, #f1f5ec 100%);
+}
+
+/* Royal Mihrab Arch Silhouette Backing */
+.hero-arch-bg {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: min(85vw, 680px);
+  height: min(88vh, 760px);
+  pointer-events: none;
+  opacity: 0.55;
+}
+
+/* Arabic Alif & Ra Watermark Stamp */
+.hero-mark {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -46%);
+  width: min(70vw, 540px);
+  height: min(70vw, 540px);
+  pointer-events: none;
+  background: url("assets/ar-mark.svg") center center / contain no-repeat;
+  opacity: 0.05;
+  mix-blend-mode: multiply;
+}
+
+.hero-content {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 40px 24px;
+  z-index: 2;
+}
+
+.bismillah {
+  font-family: var(--arabic);
+  font-size: clamp(24px, 2.8vw, 36px);
+  color: var(--rose-deep);
+  line-height: 1.8;
+  opacity: 1;
+  letter-spacing: 0.02em;
+}
+
+.bismillah-sub {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: clamp(12px, 1.2vw, 15px);
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--text-soft);
+  margin-top: 4px;
+  opacity: 1;
+}
+
+.hero-names {
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: clamp(40px, 6.8vw, 88px);
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin: 28px 0 24px;
+}
+.hero-names .line {
+  display: block;
+}
+.hero-names .char {
+  display: inline-block;
+  opacity: 1;
+  will-change: transform, opacity, filter;
+}
+.hero-names .ampersand {
+  display: block;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 0.65em;
+  line-height: 1;
+  color: var(--gold);
+  margin: 6px 0;
+}
+
+.hero-meta {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: clamp(14px, 1.3vw, 17px);
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--rose);
+  opacity: 1;
+}
+.hero-meta .rule {
+  width: 36px; height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+.scroll-hint {
+  position: absolute;
+  bottom: calc(32px + env(safe-area-inset-bottom));
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 11px;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--text-soft);
+  opacity: 0;
+  pointer-events: none;
+}
+.scroll-hint .arrow {
+  width: 1px; height: 26px;
+  background: linear-gradient(180deg, var(--pista-soft), transparent);
+  animation: scrollDown 2s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+}
+@keyframes scrollDown {
+  0% { transform: scaleY(0); transform-origin: top; }
+  50% { transform: scaleY(1); transform-origin: top; }
+  50.1% { transform: scaleY(1); transform-origin: bottom; }
+  100% { transform: scaleY(0); transform-origin: bottom; }
+}
+
+/* =========================================================
+   EDITORIAL TRANSITION
+   ========================================================= */
+.transition {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.t-chapter {
+  min-height: 38vh;
+  background: linear-gradient(180deg, #f1f5ec 0%, #f8faf5 100%);
+  display: flex; align-items: center; justify-content: center;
+  padding: 8vh 6vw;
+}
+.t-chapter .t-line {
+  position: absolute; left: 50%; top: 0;
+  transform: translateX(-50%);
+  width: 1px; height: 100%;
+  background: rgba(71, 106, 59, 0.18);
+  pointer-events: none;
+}
+.t-chapter .t-line-fill {
+  display: block; width: 100%; height: 0%;
+  background: linear-gradient(180deg, rgba(197,160,89,0) 0%, var(--gold) 50%, rgba(197,160,89,0) 100%);
+  transform-origin: top;
+}
+.t-chapter-text {
+  position: relative; z-index: 2;
+  font-family: var(--serif); font-style: italic; font-weight: 400;
+  font-size: clamp(19px, 2.3vw, 32px); color: var(--pista-deep);
+  letter-spacing: 0.06em; text-align: center;
+  display: flex; gap: 0.45em; align-items: center; justify-content: center; flex-wrap: wrap;
+}
+.t-chapter-text .word,
+.t-chapter-text .dash {
+  display: inline-block; opacity: 0; transform: translateY(14px); will-change: transform, opacity;
+}
+
+/* =========================================================
+   SECTION 2 — THE INVITATION & SURAH AR-RUM
+   ========================================================= */
+.invitation {
+  position: relative;
+  min-height: 90vh;
+  padding: 12vh 6vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background:
+    radial-gradient(900px 600px at 50% 50%, rgba(205, 224, 197, 0.3), transparent 70%),
+    #f8faf5;
+}
+
+.arch-medallion {
+  width: 110px; height: 110px;
+  margin-bottom: 28px;
+  color: var(--gold);
+}
+
+.invitation .eyebrow {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 13px;
+  letter-spacing: 0.45em;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+  margin-bottom: 20px;
+}
+
+.invitation .body {
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: clamp(26px, 3.8vw, 52px);
+  line-height: 1.35;
+  color: var(--ink);
+  max-width: 22ch;
+  margin: 0 auto;
+}
+.invitation .mask-line {
+  display: block;
+  overflow: hidden;
+}
+.invitation .mask-line > span {
+  display: inline-block;
+  transform: translateY(105%);
+  will-change: transform;
+}
+.invitation .body em {
+  font-style: italic;
+  color: var(--pista);
+  font-family: var(--serif);
+}
+
+/* =========================================================
+   ROYAL COUPLE PORTRAIT PRESENTATION
+   ========================================================= */
+.couple-portrait-wrap {
+  position: relative;
+  margin: 50px auto 44px;
+  max-width: 380px;
+  width: 88%;
+  opacity: 0;
+  transform: translateY(32px) scale(0.96);
+  will-change: transform, opacity;
+}
+
+.portrait-arch-frame {
+  position: relative;
+  padding: 8px;
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.96), rgba(241, 245, 236, 0.92));
+  border: 1.5px solid var(--gold);
+  border-radius: 200px 200px 28px 28px;
+  box-shadow:
+    0 24px 60px rgba(37, 64, 31, 0.12),
+    0 0 35px rgba(197, 160, 89, 0.22);
+  transition: transform 0.45s var(--ease-out), box-shadow 0.45s var(--ease-out);
+}
+.portrait-arch-frame:hover {
+  transform: translateY(-4px) scale(1.015);
+  box-shadow:
+    0 32px 75px rgba(37, 64, 31, 0.16),
+    0 0 50px rgba(197, 160, 89, 0.32);
+}
+
+.portrait-halo {
+  position: absolute;
+  inset: -14px;
+  border-radius: 215px 215px 40px 40px;
+  background: radial-gradient(circle at 50% 30%, rgba(197, 160, 89, 0.28) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.portrait-inner {
+  position: relative;
+  border-radius: 192px 192px 20px 20px;
+  overflow: hidden;
+  aspect-ratio: 3 / 4;
+  background: #172614;
+  z-index: 1;
+}
+.portrait-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 15%;
+  display: block;
+  transition: transform 0.8s var(--ease-out);
+}
+.portrait-arch-frame:hover .portrait-img {
+  transform: scale(1.035);
+}
+.portrait-inner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 65%, rgba(23, 38, 20, 0.45) 100%);
+  pointer-events: none;
+}
+
+/* Floating Royal Badge */
+.portrait-badge {
+  position: absolute;
+  bottom: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--line-gold);
+  border-radius: 30px;
+  padding: 8px 26px;
+  box-shadow: 0 10px 30px rgba(37, 64, 31, 0.14);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  z-index: 3;
+  white-space: nowrap;
+}
+.portrait-badge .names {
+  font-family: var(--display);
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: 0.02em;
+}
+.portrait-badge .role {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+}
+
+@media (max-width: 768px) {
+  .couple-portrait-wrap {
+    max-width: 300px;
+    margin: 40px auto 36px;
+  }
+  .portrait-badge {
+    padding: 6px 20px;
+    bottom: -16px;
+  }
+  .portrait-badge .names {
+    font-size: 14px;
+  }
+  .portrait-badge .role {
+    font-size: 10px;
+  }
+}
+
+/* Quranic Ayah of Love Box */
+.ayah-card {
+  margin-top: 56px;
+  max-width: 640px;
+  width: 92%;
+  padding: 34px 28px;
+  background: rgba(255, 255, 255, 0.88);
+  border: 1px solid var(--line-gold);
+  border-radius: 12px;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 16px 40px rgba(37, 64, 31, 0.08);
+  position: relative;
+  opacity: 0;
+  transform: translateY(24px);
+}
+.ayah-card::before, .ayah-card::after {
+  content: "✦";
+  position: absolute;
+  color: var(--gold);
+  font-size: 11px;
+}
+.ayah-card::before { top: 10px; left: 12px; }
+.ayah-card::after { bottom: 10px; right: 12px; }
+
+.ayah-arabic {
+  font-family: var(--arabic);
+  font-size: clamp(20px, 2.2vw, 28px);
+  color: var(--rose-deep);
+  line-height: 1.9;
+  direction: rtl;
+  margin-bottom: 14px;
+}
+.ayah-trans {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: clamp(14px, 1.1vw, 16px);
+  color: var(--text-soft);
+  line-height: 1.65;
+  margin-bottom: 10px;
+}
+.ayah-ref {
+  font-family: var(--serif);
+  font-size: 11px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+}
+
+/* =========================================================
+   SECTION 3 — THE SOLEMN NIKKAH CEREMONY (SINGLE EVENT)
+   ========================================================= */
+.day {
+  position: relative;
+  min-height: 100vh;
+  padding: 12vh 6vw 14vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background:
+    radial-gradient(1000px 700px at 80% 20%, rgba(205, 224, 197, 0.35), transparent 60%),
+    radial-gradient(1100px 700px at 20% 80%, rgba(237, 244, 234, 0.4), transparent 60%),
+    linear-gradient(180deg, #f8faf5 0%, #f1f5ec 100%);
+  overflow: hidden;
+}
+
+.day .pattern {
+  position: absolute; inset: 0; pointer-events: none;
+  background-image: radial-gradient(circle, rgba(71, 106, 59, 0.12) 1.2px, transparent 1.2px);
+  background-size: 32px 32px;
+  opacity: 0.8;
+}
+
+.header-row {
+  position: relative; z-index: 2;
+  display: flex; justify-content: space-between; align-items: flex-start;
+  font-family: var(--serif); font-size: clamp(16px, 1.8vw, 22px);
+  color: var(--pista-deep);
+}
+.header-row .cer-num {
+  font-style: italic;
+  font-size: clamp(24px, 3.2vw, 38px);
+  color: var(--pista-deep);
+}
+.header-row .sub-tag {
+  margin-top: 6px; font-style: normal;
+  letter-spacing: 0.22em; font-size: 11px;
+  text-transform: uppercase; color: var(--gold-deep);
+}
+.header-row .right { text-align: right; }
+
+/* 3D Rotating Date Display */
+.day-date-wrap {
+  position: relative; z-index: 2;
+  margin: 6vh auto;
+  text-align: center;
+}
+.day-date {
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: clamp(56px, 13vw, 170px);
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  color: var(--ink);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  perspective: 1000px;
+}
+.day-date .digit, .day-date .sep {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(60px) rotateX(-80deg);
+  will-change: transform, opacity;
+}
+.day-date .sep {
+  color: var(--gold);
+  margin: 0 0.06em;
+}
+
+.hijri {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: clamp(16px, 2vw, 24px);
+  letter-spacing: 0.12em;
+  color: var(--pista);
+  text-align: center;
+  margin-top: 14px;
+}
+
+.day-foot {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 960px;
+  margin: 6vh auto 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.venue-info {
+  flex: 1;
+  min-width: 280px;
+}
+
+.venue-label {
+  font-family: var(--serif); font-style: italic;
+  font-size: 11px; letter-spacing: 0.35em;
+  text-transform: uppercase; color: var(--gold-deep);
+  margin-bottom: 12px;
+  display: flex; align-items: center; gap: 8px;
+}
+
+.venue-name {
+  font-family: var(--display);
+  font-size: clamp(22px, 2.8vw, 38px);
+  line-height: 1.25;
+  color: var(--ink);
+  max-width: 24ch;
+  min-height: 2.2em;
+}
+
+.venue-name .caret {
+  display: inline-block;
+  width: 2px; height: 1.05em;
+  background: var(--gold);
+  vertical-align: -0.1em;
+  margin-left: 4px;
+  animation: blink 0.9s infinite;
+}
+.venue-name .caret.is-done { display: none; }
+@keyframes blink { 50% { opacity: 0; } }
+
+.venue-actions {
+  display: flex;
+  gap: 14px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.btn-action {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 22px;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 13px;
+  letter-spacing: 0.1em;
+  border-radius: 30px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s var(--ease-out);
+}
+
+.btn-action--outline {
+  border: 1px solid var(--pista);
+  color: var(--pista-deep);
+  background: rgba(255, 255, 255, 0.75);
+}
+
+.btn-action--outline:hover {
+  background: var(--pista-tint);
+  border-color: var(--pista-deep);
+  transform: translateY(-2px);
+}
+
+.day-foot .right-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 16px;
+}
+
+.day-countdown {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: clamp(14px, 1.4vw, 18px);
+  color: var(--text-soft);
+}
+
+.day-countdown strong {
+  color: var(--pista-deep);
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .day-foot {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    margin-top: 4vh;
+  }
+  .day-foot .right-col {
+    align-items: flex-start;
+  }
+  .venue-name {
+    min-height: auto;
+  }
+}
+
+.mbtn {
+  display: inline-flex; align-items: center; gap: 14px;
+  padding: 14px 28px;
+  border-radius: 40px;
+  background: var(--pista-deep);
+  color: #fff;
+  font-family: var(--serif);
+  font-size: 13px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 0.3s var(--ease-out);
+  box-shadow: 0 10px 24px rgba(37, 64, 31, 0.22);
+}
+.mbtn:hover {
+  transform: translateY(-3px) scale(1.02);
+  background: #172813;
+  box-shadow: 0 14px 30px rgba(37, 64, 31, 0.32);
+}
+.mbtn .arrow {
+  width: 6px; height: 6px;
+  border-top: 1.5px solid currentColor;
+  border-right: 1.5px solid currentColor;
+  transform: rotate(45deg);
+}
+
+/* =========================================================
+   INTERACTIVE BLESSINGS / DUA SECTION
+   ========================================================= */
+.blessings-bar {
+  position: relative; z-index: 2;
+  margin: 8vh auto 4vh;
+  max-width: 620px;
+  width: 90%;
+  padding: 24px 28px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid var(--line-gold);
+  border-radius: 50px;
+  box-shadow: 0 12px 32px rgba(37, 64, 31, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.blessings-info {
+  display: flex;
+  flex-direction: column;
+}
+.blessings-title {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 16px;
+  color: var(--pista-deep);
+}
+.blessings-counter {
+  font-family: var(--display);
+  font-size: 13px;
+  color: var(--gold-deep);
+  letter-spacing: 0.06em;
+}
+.blessings-btn {
+  background: linear-gradient(135deg, var(--gold) 0%, #dbb76c 100%);
+  color: #172614;
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 10px 22px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 14px rgba(197, 160, 89, 0.35);
+  transition: all 0.25s var(--ease-out);
+}
+.blessings-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(197, 160, 89, 0.5);
+}
+.blessings-btn:active {
+  transform: scale(0.97);
+}
+
+/* =========================================================
+   SECTION 4 — COUNTDOWN & CLOSING (BLENDED)
+   ========================================================= */
+.gallery--blended {
+  position: relative;
+  padding: 12vh 6vw 16vh;
+  background:
+    radial-gradient(1000px 700px at 15% 18%, rgba(205, 224, 197, 0.35), transparent 60%),
+    radial-gradient(1200px 900px at 85% 55%, rgba(237, 244, 234, 0.4), transparent 62%),
+    linear-gradient(180deg, #f1f5ec 0%, #f8faf5 40%, #eef4ea 100%);
+  text-align: center;
+}
+
+.gallery-head { margin-bottom: 48px; }
+.gallery-head .eye {
+  font-family: var(--serif); font-style: italic;
+  font-size: 13px; letter-spacing: 0.45em;
+  text-transform: uppercase; color: var(--gold-deep);
+  margin-bottom: 12px;
+}
+.gallery-head h2 {
+  font-family: var(--display); font-weight: 400;
+  font-size: clamp(32px, 4.5vw, 64px);
+  color: var(--ink); line-height: 1.2;
+}
+.gallery-head h2 em {
+  font-style: italic; color: var(--pista);
+  font-family: var(--serif);
+}
+
+/* Luxury 3D Odometer Countdown Card */
+.countdown-box-wrap {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 10vh;
+}
+.cd-card {
+  max-width: 660px;
+  width: 100%;
+  padding: 44px 32px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid var(--line-gold);
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(37, 64, 31, 0.08);
+  backdrop-filter: blur(12px);
+  position: relative;
+}
+.cd-card .tag {
+  display: inline-block;
+  padding: 4px 14px;
+  background: var(--pista-tint);
+  color: var(--pista-deep);
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 12px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  border-radius: 20px;
+  margin-bottom: 14px;
+}
+.cd-card h3 {
+  font-family: var(--display);
+  font-weight: 400;
+  font-size: clamp(22px, 2.6vw, 32px);
+  color: var(--ink);
+  margin-bottom: 6px;
+}
+.cd-card .sub {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 14px;
+  color: var(--text-soft);
+  margin-bottom: 32px;
+}
+
+.cd-nums {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+.cd-box {
+  background: var(--bg);
+  border: 1px solid rgba(71, 106, 59, 0.18);
+  border-radius: 16px;
+  padding: 18px 8px 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 20px rgba(37, 64, 31, 0.05);
+  transition: transform 0.3s var(--ease-out), box-shadow 0.3s var(--ease-out);
+}
+.cd-box:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 26px rgba(37, 64, 31, 0.08);
+}
+.cd-box .cd-num,
+.cd-box .odometer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--display);
+  font-weight: 500;
+  font-size: clamp(32px, 4.4vw, 52px);
+  line-height: 1.25;
+  color: var(--pista-deep);
+  font-variant-numeric: tabular-nums;
+  height: 1.25em;
+  overflow: hidden;
+}
+.cd-box .cd-digit {
+  position: relative;
+  display: inline-block;
+  height: 1.25em;
+  min-width: 0.62em;
+  overflow: hidden;
+  text-align: center;
+}
+.cd-box .cd-digit > span {
+  display: block;
+  height: 1.25em;
+  line-height: 1.25em;
+  text-align: center;
+  will-change: transform, opacity;
+}
+.cd-box .label {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 11px;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--gold-deep);
+  margin-top: 8px;
+}
+
+/* Closing Block */
+.closing-block {
+  max-width: 820px;
+  margin: 0 auto;
+}
+.closing-block .eyebrow {
+  font-family: var(--serif); font-style: italic;
+  font-size: 13px; letter-spacing: 0.5em;
+  text-transform: uppercase; color: var(--gold-deep);
+  margin-bottom: 22px;
+  display: inline-flex; align-items: center; gap: 14px;
+}
+.closing-block .eyebrow::before, .closing-block .eyebrow::after {
+  content: ""; width: 28px; height: 1px; background: var(--gold);
+}
+
+.closing-block h2 {
+  font-family: var(--display); font-weight: 400;
+  font-size: clamp(36px, 5.5vw, 76px);
+  line-height: 1.15; letter-spacing: -0.01em; color: var(--ink);
+  margin: 0 auto 40px;
+}
+.closing-block h2 .w {
+  display: inline-block; opacity: 0; transform: translateY(28px);
+  will-change: transform, opacity; padding: 0 0.1em;
+}
+.closing-block h2 em {
+  font-style: italic; color: var(--pista);
+  font-family: var(--serif);
+}
+
+.closing-block .cta-row {
+  display: flex; gap: 18px; justify-content: center; flex-wrap: wrap;
+  margin: 36px 0 60px;
+}
+
+.closing-dua {
+  display: flex; flex-direction: column; align-items: center; gap: 14px;
+  margin-top: 40px;
+}
+.closing-dua .arabic {
+  font-family: var(--arabic);
+  font-size: clamp(22px, 2.6vw, 34px);
+  color: var(--pista-deep);
+  line-height: 1.8;
+  max-width: 26ch;
+}
+.closing-dua .translation {
+  font-family: var(--serif); font-style: italic;
+  font-size: clamp(14px, 1.2vw, 17px);
+  color: var(--text-soft);
+  max-width: 44ch;
+}
+
+.closing-foot {
+  margin-top: 60px;
+  font-family: var(--serif); font-style: italic;
+  font-size: 14px; letter-spacing: 0.3em;
+  text-transform: uppercase; color: var(--pista-deep);
+  display: flex; align-items: center; justify-content: center; gap: 18px;
+}
+.closing-foot .rule {
+  width: 44px; height: 1px; background: var(--gold);
+}
+
+.best-wishes {
+  margin-top: 50px;
+  text-align: center;
+}
+.best-wishes .bw-label {
+  font-family: var(--serif); font-style: italic;
+  font-size: 10px; letter-spacing: 0.4em;
+  text-transform: uppercase; color: var(--gold-deep);
+  margin-bottom: 6px;
+}
+.best-wishes .bw-names {
+  font-family: var(--serif); font-style: italic;
+  font-size: 15px; letter-spacing: 0.06em;
+  color: var(--pista-deep);
+}
+
+/* Toast Concierge Notification */
+#toast {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%) translateY(100px);
+  background: var(--pista-deep);
+  color: #fff;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+  z-index: 11000;
+  pointer-events: none;
+  opacity: 0;
+  transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#toast.is-show {
+  transform: translateX(-50%) translateY(0);
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .chrome-corner, .chrome-index { display: none !important; }
+  .day-foot { flex-direction: column; align-items: flex-start; }
+  .day-foot .right-col { align-items: flex-start; }
+  .cd-nums { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+  .blessings-bar { flex-direction: column; text-align: center; }
+  .blessings-info { align-items: center; }
+}
+</style>
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+
+<!-- Ambient Celestial Noor Orbs -->
+<div class="ambient-noor" aria-hidden="true">
+  <div class="noor-orb noor-orb-1"></div>
+  <div class="noor-orb noor-orb-2"></div>
+</div>
+
+<!-- Interactive High-Performance Starlight Burst Canvas -->
+<canvas id="starCanvas"></canvas>
+
+<!-- =========================================================
+     ROYAL GATEFOLD INVITATION OPENING CEREMONY
+     (Pista Green, Warm Peach, Off-White & Golden Braided Cord)
+     ========================================================= -->
+<div id="cardOpeningIntro" role="dialog" aria-modal="true" aria-label="Royal Gatefold Invitation Card Opening">
+  <div class="opening-backdrop"></div>
+
+  <div class="opening-stage" id="openingStage">
+    <!-- 3D Gatefold Card -->
+    <div class="gatefold-card" id="gatefoldCard">
+      <!-- Inner Revealed Off-White Card -->
+      <div class="card-inner-sheet">
+        <div class="inner-deckled-border"></div>
+        <div>
+          <div class="bismillah-small" lang="ar" dir="rtl">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</div>
+          <div class="inner-title">The Nikkah Ceremony</div>
+        </div>
+        <div>
+          <div class="inner-names">
+            Akbar
+            <span class="inner-ampersand">&amp;</span>
+            Riswana
+          </div>
+          <div class="inner-meta">
+            Saturday, 17 October 2026 · 11:30 AM<br/>
+            V. P. Mamu Community Hall, Andathode
+          </div>
+        </div>
+        <svg class="inner-seal-mark" viewBox="0 0 100 100" fill="none" stroke="currentColor">
+          <circle cx="50" cy="50" r="42" stroke-width="1.2"/>
+          <circle cx="50" cy="50" r="36" stroke-width="0.8" stroke-dasharray="2 3"/>
+          <text x="50" y="58" font-family="'Amiri', serif" font-size="28" fill="currentColor" text-anchor="middle">نُور</text>
+        </svg>
+      </div>
+
+      <!-- Left Flap: Matte Pista Green with Gold Foil Embroidery -->
+      <div class="card-flap-left" id="flapLeft">
+        <svg class="flap-foil-svg" viewBox="0 0 200 320" fill="none" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="goldFoilGradLeft" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#fff5cc"/>
+              <stop offset="35%" stop-color="#dfb758"/>
+              <stop offset="70%" stop-color="#9a7123"/>
+              <stop offset="100%" stop-color="#eec76d"/>
+            </linearGradient>
+          </defs>
+          <rect x="8" y="8" width="184" height="304" rx="4" stroke="url(#goldFoilGradLeft)" stroke-width="1.2" opacity="0.85"/>
+          <rect x="13" y="13" width="174" height="294" rx="3" stroke="url(#goldFoilGradLeft)" stroke-width="0.6" stroke-dasharray="3 3" opacity="0.6"/>
+          <path d="M 12,42 C 28,42 42,28 42,12" stroke="url(#goldFoilGradLeft)" stroke-width="1.4"/>
+          <path d="M 12,278 C 28,278 42,292 42,308" stroke="url(#goldFoilGradLeft)" stroke-width="1.4"/>
+          <circle cx="26" cy="26" r="3.5" fill="url(#goldFoilGradLeft)" opacity="0.75"/>
+          <circle cx="26" cy="294" r="3.5" fill="url(#goldFoilGradLeft)" opacity="0.75"/>
+          <path d="M 200,110 C 160,110 130,135 130,160 C 130,185 160,210 200,210" stroke="url(#goldFoilGradLeft)" stroke-width="1.2" opacity="0.75"/>
+          <path d="M 200,125 C 175,125 150,140 150,160 C 150,180 175,195 200,195" stroke="url(#goldFoilGradLeft)" stroke-width="0.8" stroke-dasharray="2 2" opacity="0.55"/>
+        </svg>
+      </div>
+
+      <!-- Right Flap: Soft Warm Peach with Gold Foil Embroidery -->
+      <div class="card-flap-right" id="flapRight">
+        <svg class="flap-foil-svg" viewBox="0 0 200 320" fill="none" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="goldFoilGradRight" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#fff5cc"/>
+              <stop offset="35%" stop-color="#dfb758"/>
+              <stop offset="70%" stop-color="#9a7123"/>
+              <stop offset="100%" stop-color="#eec76d"/>
+            </linearGradient>
+          </defs>
+          <rect x="8" y="8" width="184" height="304" rx="4" stroke="url(#goldFoilGradRight)" stroke-width="1.2" opacity="0.85"/>
+          <rect x="13" y="13" width="174" height="294" rx="3" stroke="url(#goldFoilGradRight)" stroke-width="0.6" stroke-dasharray="3 3" opacity="0.6"/>
+          <path d="M 188,42 C 172,42 158,28 158,12" stroke="url(#goldFoilGradRight)" stroke-width="1.4"/>
+          <path d="M 188,278 C 172,278 158,292 158,308" stroke="url(#goldFoilGradRight)" stroke-width="1.4"/>
+          <circle cx="174" cy="26" r="3.5" fill="url(#goldFoilGradRight)" opacity="0.75"/>
+          <circle cx="174" cy="294" r="3.5" fill="url(#goldFoilGradRight)" opacity="0.75"/>
+          <path d="M 0,110 C 40,110 70,135 70,160 C 70,185 40,210 0,210" stroke="url(#goldFoilGradRight)" stroke-width="1.2" opacity="0.75"/>
+          <path d="M 0,125 C 25,125 50,140 50,160 C 50,180 25,195 0,195" stroke="url(#goldFoilGradRight)" stroke-width="0.8" stroke-dasharray="2 2" opacity="0.55"/>
+        </svg>
+      </div>
+
+      <!-- Wrapped Golden Braided Thread, Medallion & Tassels -->
+      <div class="card-ribbon-wrap" id="cardRibbonWrap">
+        <div class="braided-cord" id="braidedCord"></div>
+
+        <!-- Central Sculpted Golden Calligraphy Medallion -->
+        <div class="cord-medallion" id="cordMedallion" role="button" tabindex="0" aria-label="Untie golden cord and open invitation">
+          <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="medallionGold" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#fffce6"/>
+                <stop offset="30%" stop-color="#f0cb67"/>
+                <stop offset="70%" stop-color="#a67c29"/>
+                <stop offset="100%" stop-color="#ffd978"/>
+              </linearGradient>
+            </defs>
+            <circle cx="50" cy="50" r="46" stroke="url(#medallionGold)" stroke-width="1.5" stroke-dasharray="2 3"/>
+            <circle cx="50" cy="50" r="42" stroke="url(#medallionGold)" stroke-width="1.8"/>
+            <circle cx="50" cy="50" r="36" stroke="url(#medallionGold)" stroke-width="0.8"/>
+            <rect x="25" y="25" width="50" height="50" stroke="url(#medallionGold)" stroke-width="0.9" transform="rotate(0 50 50)"/>
+            <rect x="25" y="25" width="50" height="50" stroke="url(#medallionGold)" stroke-width="0.9" transform="rotate(45 50 50)"/>
+            <circle cx="50" cy="50" r="18" fill="url(#medallionGold)" opacity="0.22"/>
+            <text x="50" y="47" font-family="'Amiri', serif" font-size="16" fill="url(#medallionGold)" text-anchor="middle" font-weight="bold">بَارَكَ ٱللَّٰهُ</text>
+            <text x="50" y="63" font-family="'Playfair Display', serif" font-size="9" fill="url(#medallionGold)" text-anchor="middle" font-weight="bold" letter-spacing="1">A &amp; R</text>
+          </svg>
+        </div>
+
+        <!-- Hanging Golden Silk Tassels -->
+        <div class="tassels-hang" id="tasselsHang" aria-hidden="true">
+          <div class="silk-tassel">
+            <div class="tassel-bead"></div>
+            <div class="tassel-string"></div>
+            <div class="tassel-head"></div>
+            <div class="tassel-skirt"></div>
+          </div>
+          <div class="silk-tassel">
+            <div class="tassel-bead"></div>
+            <div class="tassel-string"></div>
+            <div class="tassel-head"></div>
+            <div class="tassel-skirt"></div>
+          </div>
+        </div>
+
+        <!-- Interactive Pull Tab -->
+        <div class="cord-pull-tab" id="cordPullTab" role="button" tabindex="0" aria-label="Pull to untie golden thread">
+          <span class="pull-text">Pull to open</span>
+          <span class="pull-arrow">⟶</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Opening Instructions -->
+    <div class="opening-instructions">
+      <div class="opening-names">Akbar &amp; Riswana</div>
+      <div class="opening-sub">
+        <span class="pulse-dot"></span> Pull the golden cord to open invitation
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- =========================================================
+     FIXED CHROME CONTROLS
+     ========================================================= -->
+<div class="chrome-corner">
+  <span class="dot"></span><span>Akbar &amp; Riswana</span>
+</div>
+
+<div class="chrome-index">17.10.2026 · THRISSUR</div>
+
+<div class="progress-rail" id="progressRail"></div>
+
+<button id="musicToggle" class="paused" aria-label="Play background music">
+  <div class="eq"><span></span><span></span><span></span><span></span></div>
+</button>
+
+<audio id="bgAudio" src="noor-ul-nikah.mp3" preload="auto" loop></audio>
+
+<!-- =========================================================
+     SECTION 1 — HERO
+     ROYAL MIHRAB ARCH & CINEMATIC BLUR REVEAL
+     ========================================================= -->
+<section class="hero" id="hero">
+  <!-- Subtle Arabic Alif & Ra Calligraphy Watermark -->
+  <div class="hero-mark" aria-hidden="true"></div>
+
+  <!-- Royal Islamic Mihrab Arch Outline -->
+  <svg class="hero-arch-bg" viewBox="0 0 600 750" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M 60,750 L 60,320 C 60,180 180,60 300,60 C 420,60 540,180 540,320 L 540,750" stroke="#c5a059" stroke-width="1.2" stroke-dasharray="4 6" opacity="0.6"/>
+    <path d="M 80,750 L 80,330 C 80,200 190,90 300,90 C 410,90 520,200 520,330 L 520,750" stroke="#476a3b" stroke-width="0.8" opacity="0.45"/>
+    <!-- Cusped Mihrab Crown -->
+    <path d="M 120,750 L 120,360 C 120,270 170,220 220,180 C 260,148 290,130 300,105 C 310,130 340,148 380,180 C 430,220 480,270 480,360 L 480,750" stroke="#c5a059" stroke-width="1.6" opacity="0.7"/>
+    <!-- Point Finial -->
+    <circle cx="300" cy="105" r="4" fill="#c5a059" />
+    <path d="M 300,60 L 300,35 M 295,45 L 305,45" stroke="#c5a059" stroke-width="1.2"/>
+  </svg>
+
+  <div class="hero-content">
+    <div>
+      <div class="bismillah" lang="ar" dir="rtl">بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ</div>
+      <div class="bismillah-sub">In the Name of Allah · The Most Gracious, The Most Merciful</div>
+
+      <h1 class="hero-names" aria-label="Akbar &amp; Riswana">
+        <span class="line" data-name="AKBAR"></span>
+        <span class="ampersand">&amp;</span>
+        <span class="line" data-name="RISWANA"></span>
+      </h1>
+
+      <div class="hero-meta">
+        <span class="rule"></span>
+        <span>Saturday, 17 October 2026 · Kerala</span>
+        <span class="rule"></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-hint">
+    <span>Scroll</span>
+    <span class="arrow"></span>
+  </div>
+</section>
+
+<!-- =========================================================
+     TRANSITION 1 — A SACRED UNION BEGINS
+     ========================================================= -->
+<section class="transition t-chapter" id="tChapter" aria-hidden="true">
+  <div class="t-line" aria-hidden="true"><span class="t-line-fill"></span></div>
+  <p class="t-chapter-text">
+    <span class="dash">—</span>
+    <span class="word">a</span>
+    <span class="word">sacred</span>
+    <span class="word">union</span>
+    <span class="word">begins</span>
+    <span class="dash">—</span>
+  </p>
+</section>
+
+<!-- =========================================================
+     SECTION 2 — THE SACRED INVITATION & SURAH AR-RUM
+     ========================================================= -->
+<section class="invitation" id="invitation">
+  <!-- Tazhib Geometric Star Medallion -->
+  <svg class="arch-medallion" id="archMedallion" viewBox="0 0 100 100" fill="none" stroke="currentColor">
+    <circle cx="50" cy="50" r="44" stroke-width="0.8" stroke-dasharray="2 3"/>
+    <circle cx="50" cy="50" r="38" stroke-width="1.2"/>
+    <rect x="23" y="23" width="54" height="54" stroke-width="0.8" transform="rotate(0 50 50)"/>
+    <rect x="23" y="23" width="54" height="54" stroke-width="0.8" transform="rotate(45 50 50)"/>
+    <circle cx="50" cy="50" r="14" stroke-width="1.2"/>
+    <circle cx="50" cy="50" r="5" fill="currentColor"/>
+  </svg>
+
+  <div class="eyebrow">The Sacred Invitation</div>
+  
+  <div class="body">
+    <span class="mask-line"><span>Together with our families,</span></span>
+    <span class="mask-line"><span>we joyfully invite you to</span></span>
+    <span class="mask-line"><span>celebrate the Nikkah uniting</span></span>
+    <span class="mask-line"><span><em>Akbar &amp; Riswana</em>.</span></span>
+  </div>
+
+  <!-- Royal Couple Portrait Presentation -->
+  <div class="couple-portrait-wrap" id="couplePortraitWrap">
+    <div class="portrait-arch-frame">
+      <div class="portrait-halo" aria-hidden="true"></div>
+      <div class="portrait-inner">
+        <img src="assets/couple-portrait.png" 
+             alt="Akbar &amp; Riswana — Nikkah Couple Portrait" 
+             class="portrait-img" 
+             loading="eager" />
+      </div>
+      <!-- Floating Royal Couple Badge -->
+      <div class="portrait-badge">
+        <span class="names">Akbar &amp; Riswana</span>
+        <span class="role">The Bride &amp; Groom · Nikkah 2026</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Quranic Ayah of Love & Mercy (Surah Ar-Rum 30:21) -->
+  <div class="ayah-card" id="ayahCard">
+    <div class="ayah-arabic">وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً</div>
+    <div class="ayah-trans">"And among His signs is that He created for you mates from among yourselves, that you may dwell in tranquility with them, and He has put love and mercy between your hearts."</div>
+    <div class="ayah-ref">— Surah Ar-Rum · 30:21</div>
+  </div>
+</section>
+
+<!-- =========================================================
+     SECTION 3 — THE SOLEMN NIKKAH CEREMONY (ONE DATE & VENUE)
+     ========================================================= -->
+<section class="day nikah" id="nikahDay">
+  <div class="pattern" data-pattern></div>
+
+  <div class="header-row">
+    <div>
+      <div class="cer-num">The Nikkah</div>
+      <div class="sub-tag">Solemnization of Marriage</div>
+    </div>
+    <div class="right">
+      <div>Saturday</div>
+      <div class="sub-tag">11:30 AM IST</div>
+    </div>
+  </div>
+
+  <div class="day-date-wrap">
+    <div class="day-date" data-date="17.10.2026" aria-label="17 · 10 · 2026"></div>
+    <div class="hijri">6 Jumada Al-Awwal 1448 AH</div>
+  </div>
+
+  <div class="day-foot">
+    <div class="venue-info">
+      <div class="venue-label">The Venue &amp; Destination</div>
+      <div class="venue-name" data-typewriter="V. P. Mamu Community Hall, Andathode — Thrissur, Kerala"></div>
+      
+      <div class="venue-actions">
+        <button class="btn-action btn-action--outline" id="copyAddressBtn" type="button">
+          <span>📋 Copy Address</span>
+        </button>
+        <a class="btn-action btn-action--outline" 
+           href="https://maps.app.goo.gl/wbC4Cchs4wCedarr9?g_st=iw"
+           target="_blank" rel="noopener">
+          <span>🧭 Open in Google Maps</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="right-col">
+      <div class="day-countdown">
+        <strong id="nikahShort">— days</strong> to the moment
+      </div>
+      <a class="mbtn"
+         href="https://maps.app.goo.gl/wbC4Cchs4wCedarr9?g_st=iw"
+         target="_blank" rel="noopener">
+        <span>Get Directions</span><span class="arrow"></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- =========================================================
+     SECTION 4 — COUNTDOWN & CLOSING (BLENDED)
+     ========================================================= -->
+<section class="gallery gallery--blended" id="gallery">
+  <div class="gallery-head">
+    <div class="eye">Counting the moments</div>
+    <h2>Until we say <em>qubool hai</em>.</h2>
+  </div>
+
+  <!-- Single Countdown Card (Single Event) -->
+  <div class="countdown-box-wrap">
+    <div class="cd-card">
+      <div class="tag">The Nikkah Ceremony</div>
+      <h3>Saturday, 17 October 2026</h3>
+      <div class="sub">V. P. Mamu Community Hall, Andathode</div>
+      <div class="cd-nums">
+        <div class="cd-box"><span class="odometer" id="odo-Days" data-pad="2">00</span><div class="label">Days</div></div>
+        <div class="cd-box"><span class="odometer" id="odo-Hours" data-pad="2">00</span><div class="label">Hours</div></div>
+        <div class="cd-box"><span class="odometer" id="odo-Minutes" data-pad="2">00</span><div class="label">Min</div></div>
+        <div class="cd-box"><span class="odometer" id="odo-Seconds" data-pad="2">00</span><div class="label">Sec</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive Duas & Blessings Bar -->
+  <div class="blessings-bar" id="blessingsBar">
+    <div class="blessings-info">
+      <div class="blessings-title">Share your prayers for the couple</div>
+      <div class="blessings-counter"><span id="duasCount">1,248</span> Duas &amp; Blessings Sent</div>
+    </div>
+    <button class="blessings-btn" id="sendDuaBtn">
+      <span>🤲 Send Blessings (آمين)</span>
+    </button>
+  </div>
+
+  <div class="closing-block" id="closing">
+    <div class="eyebrow">With Love &amp; Prayers</div>
+
+    <h2 id="closingHeadline" aria-label="We would be honored by your presence and prayers.">
+      <span class="w">We</span> <span class="w">would</span> <span class="w">be</span>
+      <span class="w"><em>honored</em></span> <span class="w">by</span> <span class="w">your</span>
+      <span class="w">presence</span> <span class="w">&amp;</span> <span class="w">prayers.</span>
+    </h2>
+
+    <div class="cta-row">
+      <a class="mbtn" id="calBtn" target="_blank" rel="noopener"
+         href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=Nikkah+%E2%80%94+Akbar+%26+Riswana&amp;dates=20261017T060000Z/20261017T093000Z&amp;ctz=Asia%2FKolkata&amp;location=V.+P.+Mamu+Community+Hall%2C+Andathode%2C+Thrissur%2C+Kerala&amp;details=Nikkah+Ceremony+of+Akbar+%26+Riswana+%E2%80%94+Saturday+17+October+2026%2C+11%3A30+AM+IST+at+V.+P.+Mamu+Community+Hall%2C+Andathode%2C+Thrissur.">
+        <span>Add to Calendar</span><span class="arrow"></span>
+      </a>
+      <a class="mbtn" target="_blank" rel="noopener"
+         href="https://maps.app.goo.gl/wbC4Cchs4wCedarr9?g_st=iw">
+        <span>Get Directions</span><span class="arrow"></span>
+      </a>
+    </div>
+
+    <!-- Prophet's Wedding Dua -->
+    <div class="closing-dua">
+      <div class="arabic" lang="ar" dir="rtl">بَارَكَ ٱللَّٰهُ لَكُمَا وَبَارَكَ عَلَيْكُمَا وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ</div>
+      <div class="translation">"May Allah bless you, and shower His blessings upon you, and join you together in goodness."</div>
+    </div>
+
+    <div class="closing-foot">
+      <span class="rule"></span>
+      <span>Akbar &nbsp;·&nbsp; Riswana</span>
+      <span class="rule"></span>
+    </div>
+
+    <div class="best-wishes">
+      <div class="bw-label">With Best Compliments From</div>
+      <div class="bw-names">Family &amp; Relatives</div>
+    </div>
+  </div>
+</section>
+
+<!-- Floating Toast Concierge -->
+<div id="toast" role="status" aria-live="polite">
+  <span>✨</span><span id="toastMsg">Notification</span>
+</div>
+
+<!-- =========================================================
+     JAVASCRIPT CORE & ANIMATION ENGINE
+     ========================================================= -->
+<script>
+/* ==========================================================================
+   ENVIRONMENT & DETECTION
+   ========================================================================== */
+const isMobile = window.matchMedia('(max-width: 900px)').matches;
+const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+const store = {
+  get(k) { try { return sessionStorage.getItem(k); } catch (_) { return null; } },
+  set(k, v) { try { sessionStorage.setItem(k, v); } catch (_) {} },
+};
+
+// Handle iOS Safari Calendar .ics fallback
+const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) ||
+  (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+if (isIOS) {
+  const calBtn = document.getElementById('calBtn');
+  if (calBtn) {
+    calBtn.href = 'wedding.ics';
+    calBtn.removeAttribute('target');
+  }
+}
+
+const motionLibsOk = typeof gsap !== 'undefined' && typeof ScrollTrigger !== 'undefined';
+if (motionLibsOk) gsap.registerPlugin(ScrollTrigger);
+
+const boot = motionLibsOk ? init : runStaticFallback;
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', boot);
+} else {
+  boot();
+}
+
+function runStaticFallback() {
+  document.documentElement.classList.add('no-motion');
+  const env = document.getElementById('cardOpeningIntro');
+  if (env) env.remove();
+  document.querySelectorAll('.hero-names .line').forEach((l) => { l.textContent = l.dataset.name || ''; });
+  document.querySelectorAll('.day-date').forEach((d) => { d.textContent = d.dataset.date || ''; });
+  document.querySelectorAll('[data-typewriter]').forEach((t) => { t.textContent = t.dataset.typewriter || ''; });
+  setupChrome();
+  setupCountdown();
+  setupMusic();
+  setupStarEngine();
+  setupConcierge();
+}
+
+function init() {
+  setupLenis();
+  setupChrome();
+  setupStarEngine();
+  setupHero();
+  setupInvitation();
+  setupDays();
+  setupCountdown();
+  setupTransitions();
+  setupClosing();
+  setupMusic();
+  setupConcierge();
+  setupCardOpeningIntro();
+  requestAnimationFrame(() => ScrollTrigger.refresh());
+}
+
+/* ==========================================================================
+   LENIS SMOOTH SCROLLING
+   ========================================================================== */
+let lenis;
+function setupLenis() {
+  if (prefersReduced || typeof Lenis === 'undefined') return;
+  lenis = new Lenis({
+    duration: 1.15,
+    easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
+    smoothWheel: true,
+    smoothTouch: true,
+    syncTouch: true,
+    syncTouchLerp: 0.085,
+    touchMultiplier: 1.6,
+  });
+  window.lenis = lenis;
+  lenis.on('scroll', ScrollTrigger.update);
+  gsap.ticker.add((time) => lenis.raf(time * 1000));
+  gsap.ticker.lagSmoothing(0);
+}
+
+/* ==========================================================================
+   CHROME PROGRESS RAIL
+   ========================================================================== */
+function setupChrome() {
+  const rail = document.getElementById('progressRail');
+  const onScroll = () => {
+    const h = document.documentElement.scrollHeight - window.innerHeight;
+    const p = h > 0 ? (window.scrollY / h) * 100 : 0;
+    rail.style.setProperty('--p', p.toFixed(2) + '%');
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+}
+
+/* ==========================================================================
+   ROMANTIC FALLING LOVE & CELESTIAL STARLIGHT BURST ENGINE
+   ========================================================================== */
+const STAR_PALETTE = ['#f4e5b8', '#c5a059', '#ffffff', '#cde0c5', '#7a9e6e', '#edf4ea'];
+const LOVE_COLORS = ['#476a3b', '#5c864d', '#7a9e6e', '#8fb882', '#cde0c5', '#ffffff', '#f4e5b8', '#c5a059'];
+const FALLING_LOVE_COLORS = ['#476a3b', '#5c864d', '#7a9e6e', '#8fb882', '#a3c297', '#cde0c5', '#edf4ea', '#ffffff', '#f4e5b8', '#c5a059'];
+
+let starCanvas, ctx;
+const stars = [];
+const fallingHearts = [];
+const lastPointer = { x: -999, y: -999, active: false, _timer: null };
+
+function createFallingHeart(initial = false) {
+  const w = window.innerWidth;
+  const h = window.innerHeight;
+  const size = isMobile ? (7 + Math.random() * 11) : (9 + Math.random() * 15);
+  return {
+    x: Math.random() * w,
+    y: initial ? (Math.random() * (h + 80) - 40) : (-30 - Math.random() * 40),
+    size,
+    vy: 0.52 + Math.random() * 0.78,
+    baseVx: (Math.random() - 0.5) * 0.32,
+    swayAmp: 1.1 + Math.random() * 1.9,
+    swaySpeed: 0.014 + Math.random() * 0.022,
+    swayPhase: Math.random() * Math.PI * 2,
+    tumble: Math.random() * Math.PI * 2,
+    tumbleSpeed: 0.018 + Math.random() * 0.026,
+    rotation: (Math.random() - 0.5) * 0.7,
+    vRot: (Math.random() - 0.5) * 0.012,
+    alpha: 0.22 + Math.random() * 0.44,
+    color: FALLING_LOVE_COLORS[Math.floor(Math.random() * FALLING_LOVE_COLORS.length)],
+    glow: Math.random() > 0.65 ? (size * 0.7) : 0,
+  };
+}
+
+function setupStarEngine() {
+  starCanvas = document.getElementById('starCanvas');
+  if (!starCanvas) return;
+  ctx = starCanvas.getContext('2d');
+
+  function resize() {
+    starCanvas.width = window.innerWidth;
+    starCanvas.height = window.innerHeight;
+  }
+  window.addEventListener('resize', resize);
+  resize();
+
+  // Populate initial falling love hearts across the screen
+  const fallingCount = isMobile ? 18 : 28;
+  fallingHearts.length = 0;
+  for (let i = 0; i < fallingCount; i++) {
+    fallingHearts.push(createFallingHeart(true));
+  }
+
+  // Pointer movement tracking & repulsion
+  const updatePointer = (x, y) => {
+    lastPointer.x = x;
+    lastPointer.y = y;
+    lastPointer.active = true;
+    clearTimeout(lastPointer._timer);
+    lastPointer._timer = setTimeout(() => { lastPointer.active = false; }, 1400);
+  };
+
+  // Every single click or touch on the screen pops a radiant LOVE BURST (hearts & stars)!
+  window.addEventListener('pointerdown', (e) => {
+    updatePointer(e.clientX, e.clientY);
+    // Avoid triggering when clicking interactive controls (music button, links, buttons)
+    if (e.target.closest('#musicToggle, a, button, input')) return;
+    spawnLoveBurst(e.clientX, e.clientY, isMobile ? 14 : 20);
+  }, { passive: true });
+
+  // Subtle stardust trail when finger/cursor drags
+  let lastMove = 0;
+  window.addEventListener('pointermove', (e) => {
+    updatePointer(e.clientX, e.clientY);
+    const now = performance.now();
+    if (now - lastMove < 35) return;
+    lastMove = now;
+    if (Math.random() < 0.65) {
+      spawnStardust(e.clientX, e.clientY);
+    }
+  }, { passive: true });
+
+  // Start animation loop
+  requestAnimationFrame(starLoop);
+}
+
+function spawnLoveBurst(x, y, count = 20) {
+  for (let i = 0; i < count; i++) {
+    const angle = Math.random() * Math.PI * 2;
+    const speed = 2.8 + Math.random() * 7.2;
+    const size = 5 + Math.random() * 7;
+    const color = LOVE_COLORS[Math.floor(Math.random() * LOVE_COLORS.length)];
+    const shape = Math.random() > 0.45 ? 'heart' : (Math.random() > 0.4 ? 'star' : 'sparkle');
+    stars.push({
+      x, y,
+      vx: Math.cos(angle) * speed,
+      vy: Math.sin(angle) * speed - 1.8,
+      size,
+      alpha: 1,
+      color,
+      shape,
+      rotation: (Math.random() - 0.5) * 0.8,
+      vRot: (Math.random() - 0.5) * 0.08,
+      life: 0,
+      maxLife: 48 + Math.random() * 32,
+    });
+  }
+}
+
+function spawnStarlightBurst(x, y, count = 16) {
+  spawnLoveBurst(x, y, count);
+}
+
+function spawnStardust(x, y) {
+  stars.push({
+    x: x + (Math.random() - 0.5) * 12,
+    y: y + (Math.random() - 0.5) * 12,
+    vx: (Math.random() - 0.5) * 0.8,
+    vy: (Math.random() - 0.5) * 0.8 - 0.5,
+    size: 1.5 + Math.random() * 2.5,
+    alpha: 0.85,
+    color: STAR_PALETTE[Math.floor(Math.random() * STAR_PALETTE.length)],
+    shape: 'sparkle',
+    rotation: Math.random() * Math.PI,
+    vRot: 0.05,
+    life: 0,
+    maxLife: 24 + Math.random() * 16,
+  });
+}
+
+function drawHeart(ctx, cx, cy, size) {
+  const s = size * 0.5;
+  const yOffset = -s * 0.65;
+  ctx.beginPath();
+  ctx.moveTo(cx, cy + yOffset);
+  ctx.bezierCurveTo(cx, cy + yOffset - s * 0.85, cx - s * 1.25, cy + yOffset - s * 0.85, cx - s * 1.25, cy + yOffset);
+  ctx.bezierCurveTo(cx - s * 1.25, cy + yOffset + s * 0.75, cx, cy + yOffset + s * 1.35, cx, cy + yOffset + s * 1.65);
+  ctx.bezierCurveTo(cx, cy + yOffset + s * 1.35, cx + s * 1.25, cy + yOffset + s * 0.75, cx + s * 1.25, cy + yOffset);
+  ctx.bezierCurveTo(cx + s * 1.25, cy + yOffset - s * 0.85, cx, cy + yOffset - s * 0.85, cx, cy + yOffset);
+  ctx.closePath();
+  ctx.fill();
+}
+
+function drawStar(ctx, cx, cy, spikes, outerRadius, innerRadius) {
+  let rot = Math.PI / 2 * 3;
+  let x = cx;
+  let y = cy;
+  const step = Math.PI / spikes;
+
+  ctx.beginPath();
+  ctx.moveTo(cx, cy - outerRadius);
+  for (let i = 0; i < spikes; i++) {
+    x = cx + Math.cos(rot) * outerRadius;
+    y = cy + Math.sin(rot) * outerRadius;
+    ctx.lineTo(x, y);
+    rot += step;
+
+    x = cx + Math.cos(rot) * innerRadius;
+    y = cy + Math.sin(rot) * innerRadius;
+    ctx.lineTo(x, y);
+    rot += step;
+  }
+  ctx.lineTo(cx, cy - outerRadius);
+  ctx.closePath();
+  ctx.fill();
+}
+
+function starLoop() {
+  ctx.clearRect(0, 0, starCanvas.width, starCanvas.height);
+
+  // 1. RENDER CONTINUOUS FALLING LOVE HEARTS
+  for (let i = 0; i < fallingHearts.length; i++) {
+    const h = fallingHearts[i];
+    h.swayPhase += h.swaySpeed;
+    h.tumble += h.tumbleSpeed;
+    h.rotation += h.vRot;
+
+    const sway = Math.sin(h.swayPhase) * h.swayAmp;
+    h.x += h.baseVx + sway;
+    h.y += h.vy;
+
+    // Gentle deflection when cursor/touch is near
+    if (lastPointer.active) {
+      const dx = h.x - lastPointer.x;
+      const dy = h.y - lastPointer.y;
+      const dist = Math.hypot(dx, dy);
+      if (dist < 85 && dist > 0) {
+        const force = (1 - dist / 85) * 2.2;
+        h.x += (dx / dist) * force;
+        h.y += (dy / dist) * force * 0.5;
+      }
+    }
+
+    // Wrap around screen bounds
+    if (h.y > starCanvas.height + 40) {
+      h.y = -35;
+      h.x = Math.random() * starCanvas.width;
+      h.color = FALLING_LOVE_COLORS[Math.floor(Math.random() * FALLING_LOVE_COLORS.length)];
+    }
+    if (h.x < -40) h.x = starCanvas.width + 30;
+    if (h.x > starCanvas.width + 40) h.x = -30;
+
+    ctx.save();
+    ctx.translate(h.x, h.y);
+    ctx.rotate(h.rotation);
+    // 3D tumble flip in perspective
+    const scaleX = Math.cos(h.tumble);
+    ctx.scale(scaleX, 1);
+    ctx.globalAlpha = h.alpha * (0.8 + 0.2 * Math.abs(scaleX));
+    ctx.fillStyle = h.color;
+    if (h.glow > 0) {
+      ctx.shadowColor = h.color;
+      ctx.shadowBlur = h.glow;
+    }
+    drawHeart(ctx, 0, 0, h.size);
+    ctx.restore();
+  }
+
+  // 2. RENDER INTERACTIVE TOUCH BURSTS & STARDUST
+  for (let i = stars.length - 1; i >= 0; i--) {
+    const s = stars[i];
+    s.x += s.vx;
+    s.y += s.vy;
+    s.vx *= 0.94;
+    s.vy = s.vy * 0.94 + 0.08; // subtle gentle gravity
+    s.rotation += s.vRot;
+    s.life++;
+
+    s.alpha = Math.max(0, 1 - (s.life / s.maxLife));
+
+    ctx.save();
+    ctx.translate(s.x, s.y);
+    ctx.rotate(s.rotation);
+    ctx.globalAlpha = s.alpha;
+    ctx.fillStyle = s.color;
+    ctx.shadowColor = s.color;
+    ctx.shadowBlur = s.size * 2;
+
+    if (s.shape === 'star') {
+      drawStar(ctx, 0, 0, 4, s.size, s.size * 0.35);
+    } else if (s.shape === 'heart') {
+      drawHeart(ctx, 0, 0, s.size);
+    } else {
+      ctx.beginPath();
+      ctx.arc(0, 0, s.size * 0.6, 0, Math.PI * 2);
+      ctx.fill();
+    }
+    ctx.restore();
+
+    if (s.life >= s.maxLife || s.alpha <= 0.01) {
+      stars.splice(i, 1);
+    }
+  }
+
+  requestAnimationFrame(starLoop);
+}
+
+/* =========================================================
+   HERO ANIMATION (CINEMATIC CHARACTER-BY-CHARACTER BLUR REVEAL)
+   ========================================================= */
+let heroReveal = null;
+function playHeroReveal(delay = 0) {
+  if (heroReveal) return heroReveal;
+  const chars = gsap.utils.toArray('.hero-names .char');
+  heroReveal = gsap.timeline({ defaults: { ease: 'power4.out' }, delay });
+  heroReveal
+    .fromTo('.bismillah', { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 1.1 })
+    .fromTo('.bismillah-sub', { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.8 }, '-=0.6')
+    .fromTo(chars, { opacity: 0, y: 28, filter: 'blur(10px)' }, {
+      opacity: 1, y: 0, filter: 'blur(0px)',
+      duration: 1.2,
+      stagger: { each: 0.04, from: 'random' },
+    }, '-=0.5')
+    .fromTo('.hero-meta', { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.8 }, '-=0.3')
+    .fromTo('.scroll-hint', { opacity: 0 }, { opacity: 1, duration: 0.6 }, '-=0.2');
+  return heroReveal;
+}
+
+function setupHero() {
+  document.querySelectorAll('.hero-names .line').forEach((line) => {
+    const name = line.dataset.name || '';
+    line.innerHTML = [...name].map(
+      (ch) => `<span class="char">${ch === ' ' ? '&nbsp;' : ch}</span>`
+    ).join('');
+  });
+
+  const hasIntroEl = document.getElementById('cardOpeningIntro');
+  const introWillPlay = !prefersReduced && hasIntroEl;
+  if (!introWillPlay) {
+    playHeroReveal(0.05);
+  }
+
+  if (prefersReduced) return;
+
+  gsap.to('.hero-arch-bg', {
+    scale: 1.08, opacity: 0.2, ease: 'power2.in',
+    scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: 1 },
+  });
+
+  gsap.to('.hero-names', {
+    scale: 1.12, opacity: 0, filter: 'blur(10px)', ease: 'power2.in',
+    scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: 1 },
+  });
+
+  gsap.to('.hero-content', {
+    opacity: 0, y: -30, ease: 'power2.in',
+    scrollTrigger: { trigger: '.hero', start: '35% top', end: 'bottom top', scrub: 1 },
+  });
+
+  ScrollTrigger.create({
+    trigger: '.hero', start: 'top top', end: '+=40%',
+    pin: true, pinSpacing: true,
+  });
+}
+
+/* =========================================================
+   EDITORIAL TRANSITION
+   ========================================================= */
+function setupTransitions() {
+  const chapter = document.getElementById('tChapter');
+  if (chapter) {
+    const words = chapter.querySelectorAll('.word, .dash');
+    const fill = chapter.querySelector('.t-line-fill');
+    gsap.to(words, {
+      opacity: 1, y: 0, duration: 0.9, ease: 'power3.out', stagger: 0.09,
+      scrollTrigger: { trigger: chapter, start: 'top 75%', toggleActions: 'play none none reverse' },
+    });
+    if (!prefersReduced) {
+      gsap.fromTo(fill, { height: '0%' }, {
+        height: '100%', ease: 'none',
+        scrollTrigger: { trigger: chapter, start: 'top bottom', end: 'bottom top', scrub: 0.8 },
+      });
+      gsap.to(chapter.querySelector('.t-chapter-text'), {
+        opacity: 0, y: -10, ease: 'power2.in',
+        scrollTrigger: { trigger: chapter, start: 'bottom 60%', end: 'bottom 30%', scrub: 0.5 },
+      });
+    }
+  }
+}
+
+/* =========================================================
+   SECTION 2 — THE INVITATION & QURANIC AYAH
+   ========================================================= */
+function setupInvitation() {
+  const lines = gsap.utils.toArray('.invitation .mask-line > span');
+  gsap.to(lines, {
+    y: 0, duration: 1.1, ease: 'power3.out', stagger: 0.12,
+    scrollTrigger: { trigger: '.invitation', start: 'top 70%', end: 'top 20%', toggleActions: 'play none none reverse' },
+  });
+
+  gsap.to('#couplePortraitWrap', {
+    opacity: 1, y: 0, scale: 1, duration: 1.2, ease: 'power3.out',
+    scrollTrigger: { trigger: '#couplePortraitWrap', start: 'top 85%', toggleActions: 'play none none reverse' },
+  });
+
+  gsap.to('#ayahCard', {
+    opacity: 1, y: 0, duration: 1, ease: 'power3.out',
+    scrollTrigger: { trigger: '#ayahCard', start: 'top 80%', toggleActions: 'play none none reverse' },
+  });
+
+  if (prefersReduced) return;
+  gsap.to('#archMedallion', {
+    rotation: 360, ease: 'none', transformOrigin: '50% 50%',
+    scrollTrigger: { trigger: '.invitation', start: 'top bottom', end: 'bottom top', scrub: 1.2 },
+  });
+}
+
+/* =========================================================
+   SECTION 3 — THE DAY (3D ROTATING DIGITS & TYPEWRITER)
+   ========================================================= */
+function setupDays() {
+  document.querySelectorAll('.day-date').forEach((el) => {
+    const date = el.dataset.date || '';
+    el.innerHTML = [...date].map((ch) => {
+      const cls = (ch === '.' || ch === '/' || ch === '-') ? 'sep' : 'digit';
+      return `<span class="${cls}">${ch}</span>`;
+    }).join('');
+  });
+
+  document.querySelectorAll('.day').forEach((day) => {
+    const digits = day.querySelectorAll('.day-date .digit, .day-date .sep');
+    gsap.to(digits, {
+      opacity: 1, y: 0, rotateX: 0, duration: 1, ease: 'power3.out', stagger: 0.07,
+      scrollTrigger: { trigger: day.querySelector('.day-date'), start: 'top 80%', toggleActions: 'play none none reverse' },
+    });
+
+    const tw = day.querySelector('[data-typewriter]');
+    if (tw) {
+      const text = tw.dataset.typewriter;
+      tw.innerHTML = '<span class="tw-text"></span><span class="caret"></span>';
+      const target = tw.querySelector('.tw-text');
+      const obj = { i: 0 };
+      ScrollTrigger.create({
+        trigger: tw, start: 'top 75%', once: true,
+        onEnter: () => {
+          gsap.to(obj, {
+            i: text.length,
+            duration: Math.max(1.2, text.length * 0.035),
+            ease: 'none',
+            onUpdate: () => { target.textContent = text.slice(0, Math.round(obj.i)); },
+            onComplete: () => { const c = tw.querySelector('.caret'); if (c) c.classList.add('is-done'); },
+          });
+        },
+      });
+    }
+
+    if (!prefersReduced) {
+      const pattern = day.querySelector('[data-pattern]');
+      if (pattern) {
+        gsap.to(pattern, {
+          yPercent: 18, ease: 'none',
+          scrollTrigger: { trigger: day, start: 'top bottom', end: 'bottom top', scrub: true },
+        });
+      }
+    }
+  });
+}
+
+/* =========================================================
+   COUNTDOWN & 3D ROLLING ODOMETER (17 OCTOBER 2026)
+   ========================================================= */
+const nikahDate = new Date('2026-10-17T11:30:00+05:30').getTime();
+
+function pad(n, len) { return String(Math.max(0, n)).padStart(len, '0'); }
+
+function computeCountdown(target) {
+  const now = Date.now();
+  const diff = Math.max(0, target - now);
+  return {
+    d: Math.floor(diff / 86400000),
+    h: Math.floor((diff % 86400000) / 3600000),
+    m: Math.floor((diff % 3600000) / 60000),
+    s: Math.floor((diff % 60000) / 1000),
+  };
+}
+
+function setCountdownNumber(el, valueStr) {
+  if (!el) return;
+  const oldVal = el.dataset.val;
+  if (oldVal === valueStr) return;
+  el.dataset.val = valueStr;
+
+  const newDigits = valueStr.split('');
+
+  // Initial render or fallback
+  if (!oldVal || typeof gsap === 'undefined' || prefersReduced) {
+    el.innerHTML = newDigits.map((d) => `<span class="cd-digit"><span>${d}</span></span>`).join('');
+    return;
+  }
+
+  const oldDigits = oldVal.split('');
+
+  // If number of digits changed, re-render cleanly
+  if (oldDigits.length !== newDigits.length || el.querySelectorAll('.cd-digit').length !== newDigits.length) {
+    el.innerHTML = newDigits.map((d) => `<span class="cd-digit"><span>${d}</span></span>`).join('');
+    return;
+  }
+
+  const slots = el.querySelectorAll('.cd-digit');
+  newDigits.forEach((newD, i) => {
+    const slot = slots[i];
+    if (!slot) return;
+    const oldD = oldDigits[i];
+    if (oldD === newD) return; // Keep unchanged digits completely steady
+
+    // Isolated digit slide: only the old digit and the incoming digit exist
+    const currentSpan = slot.querySelector('span:last-child');
+    const newSpan = document.createElement('span');
+    newSpan.textContent = newD;
+    newSpan.style.position = 'absolute';
+    newSpan.style.top = '-100%';
+    newSpan.style.left = '0';
+    newSpan.style.width = '100%';
+    newSpan.style.opacity = '0';
+    slot.appendChild(newSpan);
+
+    gsap.to(currentSpan, {
+      y: '100%',
+      opacity: 0,
+      duration: 0.35,
+      ease: 'power2.inOut',
+      onComplete: () => {
+        if (currentSpan.parentNode) currentSpan.remove();
+      }
+    });
+
+    gsap.to(newSpan, {
+      top: '0%',
+      opacity: 1,
+      duration: 0.35,
+      ease: 'power2.inOut'
+    });
+  });
+}
+
+function setupCountdown() {
+  const ids = [
+    ['odo-Days', 'd'], ['odo-Hours', 'h'],
+    ['odo-Minutes', 'm'], ['odo-Seconds', 's'],
+  ];
+
+  function tick() {
+    const n = computeCountdown(nikahDate);
+    ids.forEach(([id, key]) => {
+      const el = document.getElementById(id);
+      if (el) {
+        const padLen = parseInt(el.dataset.pad || '2', 10);
+        setCountdownNumber(el, pad(n[key], padLen));
+      }
+    });
+    const nShort = document.getElementById('nikahShort');
+    const dayWord = (d) => d + (d === 1 ? ' day' : ' days');
+    if (nShort) nShort.textContent = dayWord(n.d);
+  }
+
+  tick();
+  setInterval(tick, 1000);
+}
+
+/* =========================================================
+   CLOSING SECTION
+   ========================================================= */
+function setupClosing() {
+  const words = gsap.utils.toArray('#closingHeadline .w');
+  gsap.to(words, {
+    opacity: 1, y: 0, duration: 0.9, ease: 'power3.out', stagger: 0.08,
+    scrollTrigger: { trigger: '#closingHeadline', start: 'top 75%', toggleActions: 'play none none reverse' },
+  });
+}
+
+/* =========================================================
+   CONCIERGE & INTERACTIVE BLESSINGS (DUAS)
+   ========================================================= */
+function showToast(msg) {
+  const toast = document.getElementById('toast');
+  const toastMsg = document.getElementById('toastMsg');
+  if (!toast || !toastMsg) return;
+  toastMsg.textContent = msg;
+  toast.classList.add('is-show');
+  clearTimeout(toast._timer);
+  toast._timer = setTimeout(() => {
+    toast.classList.remove('is-show');
+  }, 3200);
+}
+
+function setupConcierge() {
+  // 1-Click Copy Venue Address
+  const copyBtn = document.getElementById('copyAddressBtn');
+  if (copyBtn) {
+    copyBtn.addEventListener('click', () => {
+      const address = 'V. P. Mamu Community Hall, Andathode, Thrissur, Kerala';
+      navigator.clipboard.writeText(address).then(() => {
+        showToast('Venue address copied to clipboard');
+        spawnStarlightBurst(window.innerWidth / 2, window.innerHeight * 0.8, 12);
+      }).catch(() => {
+        showToast('V. P. Mamu Community Hall, Andathode');
+      });
+    });
+  }
+
+  // Interactive Blessings / Dua Counter
+  const duaBtn = document.getElementById('sendDuaBtn');
+  const duasCountEl = document.getElementById('duasCount');
+  let currentDuas = parseInt(localStorage.getItem('ar_duas_count') || '1248', 10);
+  if (duasCountEl) duasCountEl.textContent = currentDuas.toLocaleString();
+
+  if (duaBtn) {
+    duaBtn.addEventListener('click', (e) => {
+      currentDuas++;
+      localStorage.setItem('ar_duas_count', String(currentDuas));
+      if (duasCountEl) duasCountEl.textContent = currentDuas.toLocaleString();
+
+      const rect = duaBtn.getBoundingClientRect();
+      spawnStarlightBurst(rect.left + rect.width / 2, rect.top + rect.height / 2, 28);
+      showToast('JazakAllah Khair! May your prayers bless Akbar & Riswana.');
+
+      if (navigator.vibrate) navigator.vibrate([20, 40, 20]);
+    });
+  }
+}
+
+/* =========================================================
+   BACKGROUND MUSIC ENGINE
+   ========================================================= */
+function setupMusic() {
+  const audio = document.getElementById('bgAudio');
+  const btn = document.getElementById('musicToggle');
+  if (!audio || !btn) return;
+  const TARGET_VOL = 0.55;
+  const FADE_MS = 2800;
+  let fadeRaf = null;
+  let userPaused = false;
+
+  const fadeIn = () => {
+    cancelAnimationFrame(fadeRaf);
+    audio.volume = 0;
+    const t0 = performance.now();
+    const step = (t) => {
+      const p = Math.min(1, (t - t0) / FADE_MS);
+      audio.volume = TARGET_VOL * (p * p);
+      if (p < 1) fadeRaf = requestAnimationFrame(step);
+    };
+    fadeRaf = requestAnimationFrame(step);
+  };
+
+  const markPlaying = () => { btn.classList.remove('paused'); btn.setAttribute('aria-label', 'Pause background music'); };
+  const markPaused = () => { btn.classList.add('paused'); btn.setAttribute('aria-label', 'Play background music'); };
+
+  // Expose function so music starts strictly AFTER opening the letter/card
+  window.__startWeddingMusic = () => {
+    if (userPaused) return;
+    audio.play().then(() => {
+      markPlaying();
+      fadeIn();
+    }).catch(() => {});
+  };
+
+  btn.addEventListener('click', () => {
+    if (audio.paused) {
+      userPaused = false;
+      window.__startWeddingMusic();
+    } else {
+      userPaused = true;
+      cancelAnimationFrame(fadeRaf);
+      audio.pause();
+      markPaused();
+    }
+  });
+
+  // If there is NO intro letter (e.g. reduced-motion fallback), allow first gesture
+  const hasIntro = document.getElementById('cardOpeningIntro');
+  if (!hasIntro) {
+    const gestures = ['pointerdown', 'touchend', 'keydown'];
+    const onFirstGesture = (e) => {
+      if (e.target && e.target.closest && e.target.closest('#musicToggle')) return;
+      if (userPaused || !audio.paused) { cleanup(); return; }
+      window.__startWeddingMusic();
+      cleanup();
+    };
+    const cleanup = () => gestures.forEach((g) => window.removeEventListener(g, onFirstGesture));
+    gestures.forEach((g) => window.addEventListener(g, onFirstGesture, { passive: true }));
+  }
+}
+
+/* =========================================================
+   ROYAL GATEFOLD INVITATION OPENING CEREMONY
+   (Pista Green, Soft Peach, Off-White & Golden Braided Cord)
+   ========================================================= */
+function setupCardOpeningIntro() {
+  const el = document.getElementById('cardOpeningIntro');
+  if (!el) {
+    playHeroReveal(0.05);
+    return;
+  }
+  if (prefersReduced) {
+    el.remove();
+    playHeroReveal(0.05);
+    return;
+  }
+
+  const html = document.documentElement;
+  html.style.overflow = 'hidden';
+  if (lenis) lenis.stop();
+
+  const card = document.getElementById('gatefoldCard');
+  const flapLeft = document.getElementById('flapLeft');
+  const flapRight = document.getElementById('flapRight');
+  const ribbonWrap = document.getElementById('cardRibbonWrap');
+  const braidedCord = document.getElementById('braidedCord');
+  const medallion = document.getElementById('cordMedallion');
+  const tassels = document.getElementById('tasselsHang');
+  const pullTab = document.getElementById('cordPullTab');
+  const instructions = el.querySelector('.opening-instructions');
+  const backdrop = el.querySelector('.opening-backdrop');
+
+  let isUntied = false;
+
+  function untieAndOpen(e) {
+    if (isUntied) return;
+    isUntied = true;
+
+    // Start background audio STRICTLY upon opening the invitation letter!
+    if (typeof window.__startWeddingMusic === 'function') {
+      window.__startWeddingMusic();
+    }
+
+    if (navigator.vibrate) navigator.vibrate([30, 45, 30]);
+
+    // Calculate coordinates for radiant starlight and love burst
+    let cx = window.innerWidth / 2;
+    let cy = window.innerHeight / 2;
+    if (e && e.clientX && e.clientY) {
+      cx = e.clientX;
+      cy = e.clientY;
+    }
+
+    // Step 1: Cord pulls and unties!
+    const tl = gsap.timeline({
+      onComplete: () => {
+        el.classList.add('is-hidden');
+        el.remove();
+        html.style.overflow = '';
+        if (lenis) lenis.start();
+        playHeroReveal(0);
+      }
+    });
+
+    // Animate golden cord uncoiling
+    tl.to(pullTab, {
+      x: 95,
+      opacity: 0,
+      duration: 0.38,
+      ease: 'power2.in'
+    }, 0)
+    .to(medallion, {
+      scale: 1.25,
+      rotation: 18,
+      boxShadow: '0 0 50px rgba(255, 220, 120, 1)',
+      duration: 0.35,
+      ease: 'back.out(2)'
+    }, 0)
+    .to(tassels, {
+      x: 28,
+      rotation: 28,
+      opacity: 0,
+      duration: 0.42,
+      ease: 'power2.in'
+    }, 0.08)
+    .to(braidedCord, {
+      scaleY: 0.15,
+      scaleX: 1.08,
+      opacity: 0,
+      duration: 0.38,
+      ease: 'power2.in'
+    }, 0.18)
+    .to(medallion, {
+      scale: 1.8,
+      opacity: 0,
+      duration: 0.42,
+      ease: 'power3.in'
+    }, 0.22)
+    .to(instructions, {
+      opacity: 0,
+      y: 12,
+      duration: 0.28
+    }, 0.12);
+
+    // Step 2: The Two Gatefold Flaps (Pista Green & Peach) swing open in 3D perspective!
+    tl.to(flapLeft, {
+      rotateY: -115,
+      duration: 1.15,
+      ease: 'power3.inOut'
+    }, 0.32)
+    .to(flapRight, {
+      rotateY: 115,
+      duration: 1.15,
+      ease: 'power3.inOut'
+    }, 0.32);
+
+    // Starlight & love bursts as the inner card reveals
+    tl.call(() => {
+      spawnLoveBurst(cx, cy, 36);
+      setTimeout(() => spawnLoveBurst(cx - 30, cy, 26), 160);
+      setTimeout(() => spawnLoveBurst(cx + 30, cy, 22), 320);
+    }, null, 0.42);
+
+    // Inner card illuminates with golden light
+    tl.to('.card-inner-sheet', {
+      boxShadow: 'inset 0 0 60px rgba(197, 160, 89, 0.45), 0 0 60px rgba(255, 255, 255, 0.65)',
+      duration: 0.8
+    }, 0.48);
+
+    // Step 3: Card glides forward into the main screen
+    tl.to(card, {
+      scale: 1.7,
+      opacity: 0,
+      duration: 0.85,
+      ease: 'power3.in'
+    }, 0.95)
+    .to(backdrop, {
+      opacity: 0,
+      duration: 0.8,
+      ease: 'power2.inOut'
+    }, 1.0);
+  }
+
+  // Interactive Drag / Swipe support on the golden cord
+  let startX = 0;
+  let isDragging = false;
+
+  const onPointerDown = (e) => {
+    startX = e.clientX || (e.touches && e.touches[0] ? e.touches[0].clientX : 0);
+    isDragging = true;
+  };
+
+  const onPointerMove = (e) => {
+    if (!isDragging || isUntied) return;
+    const currentX = e.clientX || (e.touches && e.touches[0] ? e.touches[0].clientX : 0);
+    const dx = currentX - startX;
+    if (dx > 0) {
+      gsap.set(pullTab, { x: Math.min(dx, 80) });
+      gsap.set(medallion, { x: dx * 0.25, rotation: dx * 0.2 });
+      if (dx > 45) {
+        isDragging = false;
+        untieAndOpen(e);
+      }
+    }
+  };
+
+  const onPointerUp = (e) => {
+    if (isDragging && !isUntied) {
+      isDragging = false;
+      const currentX = e.clientX || (e.changedTouches && e.changedTouches[0] ? e.changedTouches[0].clientX : 0);
+      const dx = currentX - startX;
+      if (dx > 30) {
+        untieAndOpen(e);
+      } else {
+        gsap.to(pullTab, { x: 0, duration: 0.3, ease: 'back.out(2)' });
+        gsap.to(medallion, { x: 0, rotation: 0, duration: 0.3 });
+      }
+    }
+  };
+
+  pullTab.addEventListener('mousedown', onPointerDown);
+  pullTab.addEventListener('touchstart', onPointerDown, { passive: true });
+  window.addEventListener('mousemove', onPointerMove);
+  window.addEventListener('touchmove', onPointerMove, { passive: true });
+  window.addEventListener('mouseup', onPointerUp);
+  window.addEventListener('touchend', onPointerUp, { passive: true });
+
+  // Direct click / tap triggers
+  pullTab.addEventListener('click', (e) => { e.stopPropagation(); untieAndOpen(e); });
+  medallion.addEventListener('click', (e) => { e.stopPropagation(); untieAndOpen(e); });
+  ribbonWrap.addEventListener('click', (e) => { e.stopPropagation(); untieAndOpen(e); });
+  card.addEventListener('click', (e) => { e.stopPropagation(); untieAndOpen(e); });
+  el.addEventListener('click', (e) => { untieAndOpen(e); });
+}
+</script>
+</body>
+</html>
